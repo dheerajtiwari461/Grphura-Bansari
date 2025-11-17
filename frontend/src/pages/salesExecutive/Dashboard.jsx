@@ -53,7 +53,7 @@ const Dashboard = () => {
             <div id="container">
               <div id="clients">
                 <h1>Hot Clients</h1>
-                <div id="client-list">
+                <div id="client-list" style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
                   <table>
                     <thead>
                       <th> </th>

@@ -105,7 +105,7 @@ const Complaints = () => {
 
         /* Sidebar + Responsive Layout */
         .complaints-wrapper {
-          background: #f7f8fa;
+          background: #ffffffff;
           min-height: 100vh;
           padding: 40px 30px;
           margin-left: 250px;
@@ -126,7 +126,7 @@ const Complaints = () => {
           display: flex;
           gap: 0;
           border-bottom: 1px solid #ddd;
-          background: #f7f8fa;
+          background: #ffffffff;
           width: 100%;
           padding: 0 40px;
         }

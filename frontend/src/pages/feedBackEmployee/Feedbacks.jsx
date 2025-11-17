@@ -66,7 +66,7 @@ const Feedbacks = () => {
   return (
     <div
       className="main-content-wrapper"
-      style={{ backgroundColor: "#f7f8fa", minHeight: "100vh", width: "100%" }}
+      style={{ backgroundColor: "#ffffffff", minHeight: "100vh", width: "100%" }}
     >
       <style>{`
         * {
@@ -108,7 +108,7 @@ const Feedbacks = () => {
           display: flex;
           gap: 0;
           border-bottom: 1px solid #ddd;
-          background: #f7f8fa;
+          background: #ffffffff;
           width: 100%;
           padding:0px 50px
         }

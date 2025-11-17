@@ -31,6 +31,9 @@ import FeedbackEmployeeHeader from "./components/feedbackEmployee/Header"
 import FinanceSidebar from "./components/finance/Sidebar"
 import FinanceHeader from "./components/finance/Header"
 
+import AccountantSidebar from "./components/accountant/Sidebar"
+import AccountantHeader from "./components/accountant/Header"
+
 function App() {
   const role = localStorage.getItem("role") || "finance"; // Example fallback
   const currentRoutes = roleBasedRoutes[role] || [];
@@ -195,6 +198,24 @@ function App() {
             <FinanceSidebar />
             <div>
               <FinanceHeader />
+              <Routes>
+                {currentRoutes.map((route, index) => (
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={route.element}
+                  />
+                ))}
+              </Routes>
+            </div>
+          </>
+        );
+      case "accountant":
+        return (
+          <>
+            <AccountantSidebar />
+            <div>
+              <AccountantHeader />
               <Routes>
                 {currentRoutes.map((route, index) => (
                   <Route

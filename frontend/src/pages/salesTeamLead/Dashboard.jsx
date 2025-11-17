@@ -56,7 +56,10 @@ const Dashboard = () => {
             <div id="container">
               <div id="clients">
                 <h1>Total Call</h1>
-                <div id="client-list">
+                <div
+                  id="client-list"
+                  style={{ overflowX: "auto", whiteSpace: "nowrap" }}
+                >
                   <table>
                     <thead>
                       <th> </th>
@@ -230,10 +233,7 @@ const Dashboard = () => {
 
                           <div className="comment-section">
                             <label htmlFor="comment">Comment</label>
-                            <textarea
-                              id="comment"
-                              placeholder=""
-                            ></textarea>
+                            <textarea id="comment" placeholder=""></textarea>
                           </div>
 
                           <button id="update-btn">Update</button>

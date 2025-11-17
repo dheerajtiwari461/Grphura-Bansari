@@ -10,6 +10,7 @@ import SE_UserData from "../pages/salesExecutive/UserData";
 // salesTeamLead
 import TL_Dashboard from "../pages/salesTeamLead/Dashboard";
 import TL_TransferData from "../pages/salesTeamLead/TransferData";
+import TL_TotalSales from "../pages/salesTeamLead/TotalSales";
 import TL_UntouchedData from "../pages/salesTeamLead/UntouchedData";
 import TL_TeamMember from "../pages/salesTeamLead/TeamMember";
 import TL_ProspectForm from "../pages/salesTeamLead/ProspectForm";
@@ -69,6 +70,15 @@ import FE_Salary from "../pages/feedBackEmployee/Salary";
 
 // finance
 import F_Dashboard from "../pages/finance/Dashboard";
+import F_Employeemanagement from "../pages/finance/Employeemanagement";
+import F_ClientManagement from "../pages/finance/clientManagement";
+import F_InvoiceUI from "../pages/finance/FinanceInvoice";
+
+// accountant
+import A_Dashboard from "../pages/accountant/Dashboard";
+import A_ClientManagement from "../pages/accountant/ClientManagement";
+import A_Invoice from "../pages/accountant/Invoice";
+import A_PreviousClients from "../pages/accountant/PreviousClients"
 
 export const roleBasedRoutes = {
   salesExecutive: [
@@ -83,6 +93,7 @@ export const roleBasedRoutes = {
   salesTeamLead: [
     { path: "/dashboard", element: <TL_Dashboard /> },
     { path: "/transfer-data", element: <TL_TransferData /> },
+    { path: "/total-sales", element: <TL_TotalSales /> },
     { path: "/untouched-data", element: <TL_UntouchedData /> },
     { path: "/prospect", element: <TL_Prospect /> },
     { path: "/team-member", element: <TL_TeamMember /> },
@@ -146,5 +157,17 @@ export const roleBasedRoutes = {
     { path: "/complaints", element: <FE_Complaints /> },
     { path: "/salary", element: <FE_Salary /> },
   ],
-  finance: [{ path: "/dashboard", element: <F_Dashboard /> }],
+  finance: [
+    { path: "/dashboard", element: <F_Dashboard /> },
+    { path: "/employee-management", element: <F_Employeemanagement /> },
+    { path: "/client-management", element: <F_ClientManagement /> },
+    { path: "/invoice", element: <F_InvoiceUI /> },
+  ],
+
+  accountant: [
+    { path: "/dashboard", element: <A_Dashboard /> },
+    { path: "/client-management", element: <A_ClientManagement /> },
+    { path: "/invoice", element: <A_Invoice /> },
+    { path: "/previous-clients", element: <A_PreviousClients /> },
+  ],
 };

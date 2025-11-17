@@ -14,7 +14,7 @@ const Dashboard = () => {
   const openPopup = () => setShowpopup(true);
   const closePopup = () => setShowpopup(false);
 
-  return (  
+  return (
     <main>
       <div id="dashboard">
         <div id="dashboard-container">
@@ -55,7 +55,10 @@ const Dashboard = () => {
             <div id="container">
               <div id="clients">
                 <h1>Pending Projects</h1>
-                <div id="client-list">
+                <div
+                  id="client-list"
+                  style={{ overflowX: "auto", whiteSpace: "nowrap" }}
+                >
                   <table>
                     <thead>
                       <th> </th>

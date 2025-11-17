@@ -50,95 +50,109 @@ const Dashboard = () => {
               <div id="clients">
                 <h1>Total Complaints</h1>
                 <div id="client-list">
-                  <table>
-                    <thead>
-                      <th> </th>
-                      <th>Company Name</th>
-                      <th>Subject</th>
-                      <th>Email_Id</th>
-                      <th>Isseud Date</th>
-                      <th>Discussion</th>
-                      <th>Status</th>
-                    </thead>
-                    <tr>
-                      <td>1</td>
-                      <td>Graphura India</td>
-                      <td>Vivek Kumar</td>
-                      <td>vivek@gmail.com</td>
-                      <td>10/10/25</td>
-                      <td>
-                        <button>View</button>
-                      </td>
-                      <td>
-                        <button style={{backgroundColor:"#11CE4D"}}>Solved</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Graphura India</td>
-                      <td>Vivek Kumar</td>
-                      <td>vivek@gmail.com</td>
-                      <td>10/10/25</td>
-                      <td>
-                        <button>View</button>
-                      </td>
-                      <td>
-                        <button style={{backgroundColor:"#D41A1A"}}>Unsolved</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Graphura India</td>
-                      <td>Vivek Kumar</td>
-                      <td>vivek@gmail.com</td>
-                      <td>10/10/25</td>
-                      <td>
-                        <button>View</button>
-                      </td>
-                      <td>
-                        <button style={{backgroundColor:"#11CE4D"}}>Solved</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Graphura India</td>
-                      <td>Vivek Kumar</td>
-                      <td>vivek@gmail.com</td>
-                      <td>10/10/25</td>
-                      <td>
-                        <button>View</button>
-                      </td>
-                      <td>
-                        <button style={{backgroundColor:"#11CE4D"}}>Solved</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Graphura India</td>
-                      <td>Vivek Kumar</td>
-                      <td>vivek@gmail.com</td>
-                      <td>10/10/25</td>
-                      <td>
-                        <button>View</button>
-                      </td>
-                      <td>
-                        <button style={{backgroundColor:"#D41A1A"}}>Unsolved</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>Graphura India</td>
-                      <td>Vivek Kumar</td>
-                      <td>vivek@gmail.com</td>
-                      <td>10/10/25</td>
-                      <td>
-                        <button>View</button>
-                      </td>
-                      <td>
-                        <button style={{backgroundColor:"#D41A1A"}}>Unsolved</button>
-                      </td>
-                    </tr>
-                  </table>
+                  <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
+                    <table>
+                      <thead>
+                        <th> </th>
+                        <th>Company Name</th>
+                        <th>Subject</th>
+                        <th>Email_Id</th>
+                        <th>Isseud Date</th>
+                        <th>Discussion</th>
+                        <th>Status</th>
+                      </thead>
+                      <tr>
+                        <td>1</td>
+                        <td>Graphura India</td>
+                        <td>Vivek Kumar</td>
+                        <td>vivek@gmail.com</td>
+                        <td>10/10/25</td>
+                        <td>
+                          <button>View</button>
+                        </td>
+                        <td>
+                          <button style={{ backgroundColor: "#11CE4D" }}>
+                            Solved
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Graphura India</td>
+                        <td>Vivek Kumar</td>
+                        <td>vivek@gmail.com</td>
+                        <td>10/10/25</td>
+                        <td>
+                          <button>View</button>
+                        </td>
+                        <td>
+                          <button style={{ backgroundColor: "#D41A1A" }}>
+                            Unsolved
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Graphura India</td>
+                        <td>Vivek Kumar</td>
+                        <td>vivek@gmail.com</td>
+                        <td>10/10/25</td>
+                        <td>
+                          <button>View</button>
+                        </td>
+                        <td>
+                          <button style={{ backgroundColor: "#11CE4D" }}>
+                            Solved
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Graphura India</td>
+                        <td>Vivek Kumar</td>
+                        <td>vivek@gmail.com</td>
+                        <td>10/10/25</td>
+                        <td>
+                          <button>View</button>
+                        </td>
+                        <td>
+                          <button style={{ backgroundColor: "#11CE4D" }}>
+                            Solved
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Graphura India</td>
+                        <td>Vivek Kumar</td>
+                        <td>vivek@gmail.com</td>
+                        <td>10/10/25</td>
+                        <td>
+                          <button>View</button>
+                        </td>
+                        <td>
+                          <button style={{ backgroundColor: "#D41A1A" }}>
+                            Unsolved
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Graphura India</td>
+                        <td>Vivek Kumar</td>
+                        <td>vivek@gmail.com</td>
+                        <td>10/10/25</td>
+                        <td>
+                          <button>View</button>
+                        </td>
+                        <td>
+                          <button style={{ backgroundColor: "#D41A1A" }}>
+                            Unsolved
+                          </button>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>

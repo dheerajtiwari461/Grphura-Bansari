@@ -53,20 +53,14 @@ const SalesReport = () => {
       className="p-4"
       style={{ backgroundColor: "#fff" }}
     >
-      {/* Top right buttons */}
 
-      {/* Transfer Data Section */}
       <h3 className="fw-bold mb-4 text-secondary">Transfer Data</h3>
 
-      {/* Centered dropdowns and button */}
       <div className="d-flex flex-column mb-5 mx-4">
-        {/* Dropdowns Row */}
-        {/* Dropdowns and button container */}
         <div
           className="d-flex flex-column mb-5 mx-4"
           style={{ maxWidth: "950px" }}
         >
-          {/* Row with dropdowns */}
           <div
             className="d-flex justify-content-between mb-3"
             style={{ gap: "20px" }}
@@ -92,7 +86,6 @@ const SalesReport = () => {
             </select>
           </div>
 
-          {/* Button centered below second dropdown */}
           <div className="d-flex justify-content-end">
             <button
               className="btn btn-primary px-5 py-2"
@@ -108,17 +101,14 @@ const SalesReport = () => {
         </div>
       </div>
 
-      {/* Transfer Data History */}
       <h3 className="fw-bold mb-4 text-secondary">Transfer Data History</h3>
 
       <div className="d-flex justify-content-center">
         <div
           className="table-responsive shadow-lg p-4 bg-white rounded"
           style={{
-            width: "90%",
-            maxWidth: "1100px",
+            width: "100%",
             padding: "0px 20px 0px 80px",
-            marginRight: "6.5%",
           }}
         >
           <table className="table table-bordered align-middle text-center text-secondary opacity-75 mb-0">

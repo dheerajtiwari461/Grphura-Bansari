@@ -1,0 +1,8 @@
+#totalSales-main-content {
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+}
+
+#totalSales-main {
+  padding: 40px;
+}
