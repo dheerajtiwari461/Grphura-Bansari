@@ -8,7 +8,7 @@ function CompleteProjects() {
         <div id="main-content">
           <p>Completed Projects</p>
           <div id="table-content">
-            <table>
+            <table style={{width:"100%"}}>
               <thead>
                 <tr>
                   <th>Company Name</th>

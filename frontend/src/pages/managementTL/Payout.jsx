@@ -66,7 +66,7 @@ function Payout() {
           </div>
 
           <div id="tl-payout-table-card">
-            <table>
+            <table id="mtl-payout-table">
               <thead>
                 <tr>
                   <th>Company Name</th>

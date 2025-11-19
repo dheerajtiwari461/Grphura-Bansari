@@ -47,7 +47,7 @@ function PayOut() {
           </div>
 
           <div id="payout-table-card">
-            <table>
+            <table id='payout-table'>
               <thead>
                 <tr>
                   <th>Company Name</th>

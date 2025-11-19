@@ -57,7 +57,7 @@ const ManagerReport = () => {
               <div id="clients">
                 <h1>Call Logs</h1>
                 <div id="client-list">
-                  <table>
+                  <table id="mr-table">
                     <thead>
                       <th> </th>
                       <th>Company Name</th>

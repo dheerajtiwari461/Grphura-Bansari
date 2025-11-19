@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../style/Finance/Employeemanagement.css";
+import { NavLink } from "react-router-dom";
 // assest icons
 import totalemployee from "../../assets/Finance/Employeemanagement/totalemployee.png";
 import TOTALCLIENTS from "../../assets/Finance/Employeemanagement/TOTALCLIENTS.png";
@@ -8,46 +9,45 @@ import ADDNEWEMPLOYEE from "../../assets/Finance/Employeemanagement/ADDNEWEMPLOY
 import TRANSFERDATATOACCOUNTANT from "../../assets/Finance/Employeemanagement/TRANSFERDATATOACCOUNTANT.png";
 import search from "../../assets/Finance/Employeemanagement/search.png";
 
-
-const metrics = [
-  {
-    id: 1,
-    title: "TOTAL EMPLOYEE",
-    value: 50,
-    colorClass: "metric--green",
-    iconClass: totalemployee,
-  },
-  {
-    id: 2,
-    title: "TOTAL CLIENTS",
-    value: 237,
-    colorClass: "metric--orange",
-    iconClass: TOTALCLIENTS,
-  },
-  {
-    id: 3,
-    title: "CURRENT CLIENTS",
-    value: 237,
-    colorClass: "metric--purple",
-    iconClass: CURRENTCLIENTS,
-  },
-  {
-    id: 4,
-    title: "ADD NEW EMPLOYEE",
-    value: null,
-    colorClass: "metric--pink",
-    iconClass: ADDNEWEMPLOYEE,
-    isButton: true,
-  },
-  {
-    id: 5,
-    title: "TRANSFER DATA TO ACCOUNTANT",
-    value: null,
-    colorClass: "metric--blue",
-    iconClass: TRANSFERDATATOACCOUNTANT,
-    isButton: true,
-  },
-];
+// const metrics = [
+//   {
+//     id: 1,
+//     title: "TOTAL EMPLOYEE",
+//     value: 50,
+//     colorClass: "metric--green",
+//     iconClass: totalemployee,
+//   },
+//   {
+//     id: 2,
+//     title: "TOTAL CLIENTS",
+//     value: 237,
+//     colorClass: "metric--orange",
+//     iconClass: TOTALCLIENTS,
+//   },
+//   {
+//     id: 3,
+//     title: "CURRENT CLIENTS",
+//     value: 237,
+//     colorClass: "metric--purple",
+//     iconClass: CURRENTCLIENTS,
+//   },
+//   {
+//     id: 4,
+//     title: "ADD NEW EMPLOYEE",
+//     value: null,
+//     colorClass: "metric--pink",
+//     iconClass: ADDNEWEMPLOYEE,
+//     isButton: true,
+//   },
+//   {
+//     id: 5,
+//     title: "TRANSFER DATA TO ACCOUNTANT",
+//     value: null,
+//     colorClass: "metric--blue",
+//     iconClass: TRANSFERDATATOACCOUNTANT,
+//     isButton: true,
+//   },
+// ];
 
 const sampleEmployees = new Array(8).fill(0).map((_, i) => ({
   id: `EMP00${i + 1}`,
@@ -57,19 +57,18 @@ const sampleEmployees = new Array(8).fill(0).map((_, i) => ({
 }));
 
 export default function Employeemanagement() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-  const [searchInput, setSearchInput] = useState("");   // input text
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [searchInput, setSearchInput] = useState(""); // input text
   const [appliedSearch, setAppliedSearch] = useState(""); // applied search filter
 
-   const filteredEmployees = sampleEmployees.filter((e) =>
+  const filteredEmployees = sampleEmployees.filter((e) =>
     e.id.toLowerCase().includes(appliedSearch.toLowerCase())
   );
 
-    const handleSearchSubmit = (e) => {
+  const handleSearchSubmit = (e) => {
     if (e && e.preventDefault) e.preventDefault();
     setAppliedSearch(searchInput.trim());
   };
-
 
   return (
     <div className="emploeemanagementcontainer">
@@ -83,8 +82,60 @@ export default function Employeemanagement() {
           ADD NEW MEMBER
         </button>
       </div>
+      <div id="dashboard-cards" style={{ marginBottom: "30px" }}>
+        {/* KEEPING YOUR ORIGINAL 15 CARDS */}
+        {/* -------------------------------- */}
+        <div id="card" style={{ borderLeft: "5px solid #35CC7B" }}>
+          <div id="text">
+            <h6 style={{ color: "#35CC7B" }}>TOTAL EMPLOYEE</h6>
+            <h3>50</h3>
+          </div>
+          <img id="cards-img" src={totalemployee} alt="" />
+        </div>
 
-      <section className="metrics-grid">
+        <div id="card" style={{ borderLeft: "5px solid #FF893F" }}>
+          <div id="text">
+            <h6 style={{ color: "#FF893F" }}>TOTAL CLIENTS</h6>
+            <h3>237</h3>
+          </div>
+          <div id="vector-img">
+            <img id="cards-img" src={TOTALCLIENTS} alt="" />
+          </div>
+        </div>
+
+        <div id="card" style={{ borderLeft: "5px solid #B256FF" }}>
+          <div id="text">
+            <h6 style={{ color: "#B256FF" }}>CURRENT CLIENTS</h6>
+            <h3>237</h3>
+          </div>
+          <div id="vector-img">
+            <img id="cards-img" src={CURRENTCLIENTS} alt="" />
+          </div>
+        </div>
+
+        <div id="card" style={{ borderLeft: "5px solid #FB57A1" }}>
+          <div id="text">
+            <h6 style={{ color: "#FB57A1" }}>ADD NEW EMPLOYEE</h6>
+          </div>
+          <div id="vector-img">
+            <img id="cards-img" src={ADDNEWEMPLOYEE} alt="" />
+          </div>
+        </div>
+        <div id="card" style={{ borderLeft: "5px solid #FB57A1" }}>
+          <div id="text">
+            <NavLink
+              to="/transfer-data-to-accountant"
+              style={{ cursor: "pointer" }}
+            >
+              <h6 style={{ color: "#FB57A1" }}>TRANSFER DATA TO ACCOUNTANT</h6>
+            </NavLink>
+          </div>
+          <div id="vector-img">
+            <img id="cards-img" src={TRANSFERDATATOACCOUNTANT} alt="" />
+          </div>
+        </div>
+      </div>
+      {/* <section className="metrics-grid">
         {metrics.map((m) =>
           m.isButton ? (
             <button key={m.id} className={`metric-card ${m.colorClass}`}>
@@ -107,7 +158,7 @@ export default function Employeemanagement() {
             </div>
           )
         )}
-      </section>
+      </section> */}
 
       <div className="two-column-grid">
         <section className="card card--scroll">
@@ -153,7 +204,7 @@ export default function Employeemanagement() {
         <section className="card card--scroll">
           <h2 className="card-title">Total Employee List</h2>
 
-                 <div className="search-wrap">
+          <div className="search-wrap">
             <form onSubmit={handleSearchSubmit} className="search-form">
               <input
                 type="text"
@@ -283,7 +334,10 @@ export default function Employeemanagement() {
                     />
                   </div>
                 </div>
-                <div className="form-actions" style={{ justifyContent: "center" }}>
+                <div
+                  className="form-actions"
+                  style={{ justifyContent: "center" }}
+                >
                   <button type="submit" className="add-button">
                     ADD
                   </button>

@@ -1,6 +1,6 @@
 .tdata-container {
   margin: 2rem auto;
-  /* width: 80%; */
+  /* width: 100%; */
   padding: 2rem;
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
@@ -18,7 +18,7 @@
 .tdata-filters {
   display: flex;
   gap: 2rem;
-  width: 80%;
+  width: 100%;
   justify-content: space-between;
   margin-bottom: 2rem;
   align-items: center;
@@ -37,7 +37,7 @@
 
 .tdata-search {
   display: flex;
-  width: 80%;
+  width: 100%;
   justify-content: right;
   text-align: center;
 }
@@ -59,7 +59,7 @@
 }
 
 .tdata-table {
-  width: 80%;
+  width: 100%;
   border-collapse: collapse;
   font-size: 13px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);

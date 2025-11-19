@@ -58,7 +58,7 @@ function TeamMember() {
       <div className="containerMember">
         <h1>Team Member</h1>
         <div className="card">
-          <table>
+          <table id="tram-member-table">
             <thead>
               <tr>
                 <th>Name</th>

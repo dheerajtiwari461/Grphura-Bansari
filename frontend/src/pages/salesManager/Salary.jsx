@@ -66,7 +66,7 @@ const Salary = () => {
       {/* Table container */}
       <div id="sales-report-wrapper">
         <div id="sales-report-table-container">
-          <table id="sales-report-table">
+          <table id="sales-report-table" style={{width:"100%"}}>
             <thead id="sales-report-thead">
               <tr id="sales-report-header-row">
                 <th id="th-company">Name</th>

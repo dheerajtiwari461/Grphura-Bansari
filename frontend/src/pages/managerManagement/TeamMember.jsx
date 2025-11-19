@@ -62,7 +62,7 @@ function TeamMember() {
          <h1 className="TeamMemberContainerHeading">Team Member</h1>
  
          <section className="tableContainer">
-           <table>
+           <table style={{width:"100%"}}>
              <thead>
                <tr>
                  <th>Name</th>

@@ -49,7 +49,7 @@ const Dashboard = () => {
               <div id="clients">
                 <h1>Upcomming Projects</h1>
                 <div id="client-list" style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
-                  <table>
+                  <table id="management-table">
                     <thead>
                       <th> </th>
                       <th>Company Name</th>

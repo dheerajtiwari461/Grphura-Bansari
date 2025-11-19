@@ -66,7 +66,7 @@ const Feedbacks = () => {
   return (
     <div
       className="main-content-wrapper"
-      style={{ backgroundColor: "#f7f8fa", minHeight: "100vh", width: "100%" }}
+      style={{ backgroundColor: "#ffffffff", minHeight: "100vh", width: "100%" }}
     >
       <style>{`
         * {

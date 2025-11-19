@@ -59,7 +59,7 @@ const ClientManagement = () => {
   const [showTrackModal, setShowTrackModal] = useState(false);
   const [showCompanyModal, setShowCompanyModal] = useState(false);
   const [selectedTrack, setSelectedTrack] = useState(null);
-  const [selectedClient, setSelectedClient] = useState(null);
+  const [setSelectedClient] = useState(null);
   const [selectedAccount, setSelectedAccount] = useState("");
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -225,7 +225,6 @@ const ClientManagement = () => {
                     fontWeight: "600",
                     color: "#000",
                     borderBottom: "1px solid #d1d5db",
-                    backgroundColor: "#FCFCFD",
                   }}
                 >
                   Status
@@ -750,8 +749,8 @@ const ClientManagement = () => {
                   fontWeight: "500",
                   border: "none",
                   cursor: "pointer",
-                  height:"21",
-                  width:"68px"
+                  height: "21",
+                  width: "68px",
                 }}
               >
                 Close
@@ -793,7 +792,7 @@ const ClientManagement = () => {
                   border: "1px solid #e5e7eb",
                   borderRadius: "4px",
                   overflow: "hidden",
-                  boxShadow: "0 0 15px rgba(0, 0, 0, 0.2)"
+                  boxShadow: "0 0 15px rgba(0, 0, 0, 0.2)",
                 }}
               >
                 <thead>
@@ -823,7 +822,7 @@ const ClientManagement = () => {
                           fontSize: "14px",
                           color: "#374151",
                           backgroundColor: "white",
-                          fontWeight:500
+                          fontWeight: 500,
                         }}
                       >
                         {service.name}
@@ -845,7 +844,7 @@ const ClientManagement = () => {
                   border: "1px solid #e5e7eb",
                   borderRadius: "4px",
                   overflow: "hidden",
-                  boxShadow: "0 0 15px rgba(0, 0, 0, 0.2)"
+                  boxShadow: "0 0 15px rgba(0, 0, 0, 0.2)",
                 }}
               >
                 <thead>
@@ -860,8 +859,6 @@ const ClientManagement = () => {
                         backgroundColor: "#f3f4f6",
                         borderBottom: "1px solid #e5e7eb",
                         whiteSpace: "nowrap",
-                        textAlign:'center',
-                        backgroundColor:"#FCFCFD"
                       }}
                     >
                       Department
@@ -876,8 +873,6 @@ const ClientManagement = () => {
                         backgroundColor: "#f3f4f6",
                         // borderBottom: "1px solid #e5e7eb",
                         whiteSpace: "nowrap",
-                        textAlign:'center',
-                        backgroundColor:"#FCFCFD"
                       }}
                     >
                       Employee Name
@@ -893,7 +888,7 @@ const ClientManagement = () => {
                           fontSize: "13px",
                           color: "#000",
                           backgroundColor: "white",
-                            fontWeight:400
+                          fontWeight: 400,
                         }}
                       >
                         {service.department}
@@ -904,7 +899,7 @@ const ClientManagement = () => {
                           fontSize: "14px",
                           color: "#374151",
                           backgroundColor: "white",
-                          fontWeight:400
+                          fontWeight: 400,
                         }}
                       >
                         {service.employees}
@@ -928,8 +923,8 @@ const ClientManagement = () => {
                 style={{
                   backgroundColor: "#3D68E7",
                   color: "white",
-                  width:"136px",
-                  height:"48px",
+                  width: "136px",
+                  height: "48px",
                   padding: "0",
                   borderRadius: "4px",
                   fontSize: "14px",
@@ -944,8 +939,8 @@ const ClientManagement = () => {
                 style={{
                   backgroundColor: "#3D68E7",
                   color: "white",
-                  width:"136px",
-                  height:"48px",
+                  width: "136px",
+                  height: "48px",
                   padding: "0",
                   borderRadius: "4px",
                   fontSize: "14px",
@@ -977,11 +972,11 @@ const ClientManagement = () => {
                   fontSize: "14px",
                   outline: "none",
                   cursor: "pointer",
-                  height:"52",
-                  width:"353px"
+                  height: "52",
+                  width: "353px",
                 }}
               >
-                <option value="" >Accountant Name</option>
+                <option value="">Accountant Name</option>
                 <option value="accountant1">Accountant 1</option>
                 <option value="accountant2">Accountant 2</option>
                 <option value="accountant3">Accountant 3</option>
@@ -996,8 +991,8 @@ const ClientManagement = () => {
                   fontWeight: "500",
                   border: "none",
                   cursor: "pointer",
-                  height:"32",
-                  width:"89px"
+                  height: "32",
+                  width: "89px",
                 }}
               >
                 Submit

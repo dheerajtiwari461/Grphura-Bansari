@@ -54,7 +54,7 @@ const Dashboard = () => {
               <div id="clients">
                 <h1>Hot Clients</h1>
                 <div id="client-list" style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
-                  <table>
+                  <table id="se-table">
                     <thead>
                       <th> </th>
                       <th>Company Name</th>

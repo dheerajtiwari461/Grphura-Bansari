@@ -60,7 +60,7 @@ const Dashboard = () => {
                   id="client-list"
                   style={{ overflowX: "auto", whiteSpace: "nowrap" }}
                 >
-                  <table>
+                  <table id="stl-table">
                     <thead>
                       <th> </th>
                       <th>Company Name</th>

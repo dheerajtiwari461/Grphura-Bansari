@@ -34,7 +34,6 @@ import dividendPerShare from "../../assets/finance/dashboard/dividendPerShare.pn
 import Button from "react-bootstrap/Button";
 
 const Dashboard = () => {
-
   // ✅ FULL DATA WITH ALL FIELDS
   const [data] = useState([
     {
@@ -102,25 +101,67 @@ const Dashboard = () => {
     {
       name: "Mar",
       Revenue: 1500000,
+      y2025: 2000000,
+      y2026: 1000000,
+    },
+    {
+      name: "Apr",
+      Revenue: 2500000,
+      y2025: 1500000,
+      y2026: 1000000,
+    },
+    {
+      name: "May",
+      Revenue: 1590860,
+      y2025: 2400000,
+      y2026: 1200000,
+    },
+    {
+      name: "Jun",
+      Revenue: 2500000,
+      y2025: 1000000,
+      y2026: 100000,
+    },
+    {
+      name: "Jul",
+      Revenue: 100000,
+      y2025: 2100000,
+      y2026: 1900000,
+    },
+    {
+      name: "Aug",
+      Revenue: 2800000,
+      y2025: 3400000,
+      y2026: 1000000,
+    },
+    {
+      name: "Sep",
+      Revenue: 5000000,
+      y2025: 2400000,
+      y2026: 1200000,
+    },
+    {
+      name: "Oct",
+      Revenue: 3500000,
+      y2025: 2400000,
+      y2026: 1200000,
+    },
+    {
+      name: "Nov",
+      Revenue: 4500000,
+      y2025: 2400000,
+      y2026: 1200000,
+    },
+    {
+      name: "Dec",
+      Revenue: 6000000,
       y2025: 2400000,
       y2026: 1200000,
     },
 
     // ADD MORE MONTHS (copy above block)
     // For demo, all months can reuse Feb data
-    { name: "Mar", Revenue: 1500000, ...this },
-    { name: "Apr", Revenue: 2500000, ...this },
-    { name: "May", Revenue: 1590860, ...this },
-    { name: "Jun", Revenue: 100000, ...this },
-    { name: "Jul", Revenue: 1300000, ...this },
-    { name: "Aug", Revenue: 2800000, ...this },
-    { name: "Sep", Revenue: 5000000, ...this },
-    { name: "Oct", Revenue: 3500000, ...this },
-    { name: "Nov", Revenue: 4500000, ...this },
-    { name: "Dec", Revenue: 6000000, ...this },
   ]);
-
-
 
   // Month Conversion
   const fullMonths = {
@@ -143,8 +184,6 @@ const Dashboard = () => {
   const handleClick = (_, index) => setActiveIndex(index);
 
   const activeItem = data[activeIndex];
-
-
 
   // ✅ FULL CUSTOM TOOLTIP WITH ALL 24 LINES
   const FinanceFullTooltip = ({ active, payload, label }) => {
@@ -219,12 +258,9 @@ const Dashboard = () => {
     );
   };
 
-
-
   return (
     <div>
       <main id="finance-main-content">
-
         {/* --------------------------------------------------- */}
         {/* FINANCE DASHBOARD UI */}
         {/* --------------------------------------------------- */}
@@ -235,9 +271,15 @@ const Dashboard = () => {
 
             {/* DROPDOWNS */}
             <div id="dropdowns">
-              <select className="form-select"><option>Year</option></select>
-              <select className="form-select"><option>Month</option></select>
-              <select className="form-select"><option>Department</option></select>
+              <select className="form-select">
+                <option>Year</option>
+              </select>
+              <select className="form-select">
+                <option>Month</option>
+              </select>
+              <select className="form-select">
+                <option>Department</option>
+              </select>
               <Button id="btn">Submit</Button>
             </div>
 
@@ -246,88 +288,160 @@ const Dashboard = () => {
               {/* KEEPING YOUR ORIGINAL 15 CARDS */}
               {/* -------------------------------- */}
               <div id="card" style={{ borderLeft: "5px solid #35CC7B" }}>
-                <div id="text"><h6 style={{ color: "#35CC7B" }}>SALES</h6><h3>2.37M</h3></div>
+                <div id="text">
+                  <h6 style={{ color: "#35CC7B" }}>SALES</h6>
+                  <h3>2.37M</h3>
+                </div>
                 <img id="cards-img" src={sales} alt="" />
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #FF893F" }}>
-                <div id="text"><h6 style={{ color: "#FF893F" }}>SELLING & GENERAL EXPENSE</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={sellingExpanse} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#FF893F" }}>
+                    SELLING & GENERAL EXPENSE
+                  </h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={sellingExpanse} alt="" />
+                </div>
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #B256FF" }}>
-                <div id="text"><h6 style={{ color: "#B256FF" }}>EBDITA</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={ebitda} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#B256FF" }}>EBDITA</h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={ebitda} alt="" />
+                </div>
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #FB57A1" }}>
-                <div id="text"><h6 style={{ color: "#FB57A1" }}>INTEREST</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={interest} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#FB57A1" }}>INTEREST</h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={interest} alt="" />
+                </div>
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #42B3E9" }}>
-                <div id="text"><h6 style={{ color: "#42B3E9" }}>DEPRECIATION / AMORTIZATION</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={deprecation} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#42B3E9" }}>
+                    DEPRECIATION / AMORTIZATION
+                  </h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={deprecation} alt="" />
+                </div>
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #35CC7B" }}>
-                <div id="text"><h6 style={{ color: "#35CC7B" }}>REVENUE</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={revenue} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#35CC7B" }}>REVENUE</h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={revenue} alt="" />
+                </div>
               </div>
-
 
               {/* Continue rest of cards */}
               <div id="card" style={{ borderLeft: "5px solid #FF893F" }}>
-                <div id="text"><h6 style={{ color: "#FF893F" }}>COGS</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={cogs} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#FF893F" }}>COGS</h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={cogs} alt="" />
+                </div>
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #B256FF" }}>
-                <div id="text"><h6 style={{ color: "#B256FF" }}>GROSS PROFIT</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={grossProfit} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#B256FF" }}>GROSS PROFIT</h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={grossProfit} alt="" />
+                </div>
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #FB57A1" }}>
-                <div id="text"><h6 style={{ color: "#FB57A1" }}>EXPENSES</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={expenses} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#FB57A1" }}>EXPENSES</h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={expenses} alt="" />
+                </div>
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #42B3E9" }}>
-                <div id="text"><h6 style={{ color: "#42B3E9" }}>NET PROFIT</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={netProfit} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#42B3E9" }}>NET PROFIT</h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={netProfit} alt="" />
+                </div>
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #35CC7B" }}>
-                <div id="text"><h6 style={{ color: "#35CC7B" }}>EARNINGS BEFORE TAX</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={earningBeforeTax} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#35CC7B" }}>EARNINGS BEFORE TAX</h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={earningBeforeTax} alt="" />
+                </div>
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #FF893F" }}>
-                <div id="text"><h6 style={{ color: "#FF893F" }}>TAX</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={tax} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#FF893F" }}>TAX</h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={tax} alt="" />
+                </div>
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #B256FF" }}>
-                <div id="text"><h6 style={{ color: "#B256FF" }}>NO. OF EQUITY SHARES</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={equityShares} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#B256FF" }}>NO. OF EQUITY SHARES</h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={equityShares} alt="" />
+                </div>
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #FB57A1" }}>
-                <div id="text"><h6 style={{ color: "#FB57A1" }}>EARNING PER SHARE</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={earningPerShare} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#FB57A1" }}>EARNING PER SHARE</h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={earningPerShare} alt="" />
+                </div>
               </div>
 
               <div id="card" style={{ borderLeft: "5px solid #42B3E9" }}>
-                <div id="text"><h6 style={{ color: "#42B3E9" }}>DIVIDEND PER SHARE</h6><h3>2.37M</h3></div>
-                <div id="vector-img"><img id="cards-img" src={dividendPerShare} alt="" /></div>
+                <div id="text">
+                  <h6 style={{ color: "#42B3E9" }}>DIVIDEND PER SHARE</h6>
+                  <h3>2.37M</h3>
+                </div>
+                <div id="vector-img">
+                  <img id="cards-img" src={dividendPerShare} alt="" />
+                </div>
               </div>
-
             </div>
           </div>
         </section>
-
-
-
 
         {/* --------------------------------------------------- */}
         {/* FINANCE TEXTS */}
@@ -352,9 +466,6 @@ const Dashboard = () => {
             </div>
           </div>
         </section>
-
-
-
 
         {/* --------------------------------------------------- */}
         {/* REVENUE COMPARISON CHART — with full tooltip */}
@@ -394,9 +505,6 @@ const Dashboard = () => {
           </div>
         </section>
 
-
-
-
         {/* --------------------------------------------------- */}
         {/* SECOND CHART REMAINS SAME */}
         {/* --------------------------------------------------- */}
@@ -424,7 +532,6 @@ const Dashboard = () => {
             </ResponsiveContainer>
           </div>
         </section>
-
       </main>
     </div>
   );

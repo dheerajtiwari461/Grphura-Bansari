@@ -18,7 +18,7 @@
 .manager-filters {
   display: flex;
   gap: 1rem;
-  width: 85%;
+  width: 100%;
   justify-content: space-between;
   margin-bottom: 2rem;
   align-items: center;
@@ -31,7 +31,7 @@
   border: 1px solid #ddd;
   background: #fafafa;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.06);
- min-width: 422px;
+  min-width: 422px;
   font-weight: 500px;
 }
 
@@ -55,15 +55,15 @@
 
 .manager-table-container {
   margin-top: 2rem;
-     overflow-x: auto;
-    padding: 10px 10px 30px 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  overflow-x: auto;
+  padding: 10px 10px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .manager-table {
-  width: 90%;
+  width: 100%;
   border-collapse: collapse;
   font-size: 13px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
