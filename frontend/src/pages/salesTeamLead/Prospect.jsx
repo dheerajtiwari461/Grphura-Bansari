@@ -105,7 +105,7 @@ function Prospect() {
         </div>
 
         <div className="tableContainer">
-          <table style={{ width: "100%" }}>
+          <table id="stl-table" style={{ width: "100%" }}>
             <thead>
               <tr>
                 <th></th>

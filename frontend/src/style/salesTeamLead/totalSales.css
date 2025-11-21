@@ -6,3 +6,8 @@
 #totalSales-main {
   padding: 40px;
 }
+
+#stl-table thead th{
+color: #000000;
+font-weight: 700;
+}

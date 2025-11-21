@@ -17,7 +17,7 @@ function TeamMember() {
       Email_id: "Bold text column",
       Contact_no: "Bold text column",
       Joining: "Bold text column",
-      Status: "inactive",
+      Status: "Inactive",
     },
     {
       Name: "Bold text column",
@@ -41,7 +41,7 @@ function TeamMember() {
       Email_id: "Bold text column",
       Contact_no: "Bold text column",
       Joining: "Bold text column",
-      Status: "inactive",
+      Status: "Inactive",
     },
     {
       Name: "Bold text column",
@@ -49,14 +49,14 @@ function TeamMember() {
       Email_id: "Bold text column",
       Contact_no: "Bold text column",
       Joining: "Bold text column",
-      Status: "inactive",
+      Status: "Inactive",
     },
   ];
 
   return (
     <>
       <div className="containerMember">
-        <h1>Team Member</h1>
+        <h1 style={{ fontSize: "36px" }}>Team Member</h1>
         <div className="card">
           <table id="tram-member-table">
             <thead>
@@ -89,9 +89,9 @@ function TeamMember() {
                   </td>
                   <td
                     className={
-                      member.Status === "Active"
-                        ? "status-badge status-active"
-                        : "status-badge status-inactive"
+                      member.Status.toLowerCase() === "active"
+                        ? "badge badge-success"
+                        : "badge badge-danger"
                     }
                   >
                     {member.Status}

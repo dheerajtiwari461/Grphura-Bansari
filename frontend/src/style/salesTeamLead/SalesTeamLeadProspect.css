@@ -93,6 +93,11 @@ body{
   margin-top: 24px;
 }
 
+#stl-table thead tr th {
+  color: #000000;
+  font-weight: 700;
+  font-size: 15px;
+}
 
 /* === POPUP OVERLAY === */
 #popup-overlay {

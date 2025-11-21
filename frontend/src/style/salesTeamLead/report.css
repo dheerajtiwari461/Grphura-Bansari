@@ -37,8 +37,8 @@ body {
 /* === DASHBOARD HEADING === */
 #report-data h1 {
   color: #5a5c69;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
 /* === EACH DATA BOX === */
@@ -156,22 +156,21 @@ body {
   padding: 10px;
 }
 
-#custom-table {
-  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.2);
-  padding: 10px;
+.custom-table thead tr th{
+  color: #000000;
 }
 
 .table-head {
   color: #5a5c69;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 30px;
   width: 100%;
-  padding: 0 0 0 30px;
+  /* padding: 0 0 0 30px; */
 }
 
 .table-container {
   overflow-x: auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 10px 10px 30px 10px;
   display: flex;
   flex-direction: column;

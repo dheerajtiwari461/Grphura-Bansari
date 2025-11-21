@@ -206,10 +206,9 @@ const UntouchedData = () => {
                   </p>
                   <div
                     style={{
-                      background: "#f3f6fa",
+                      background: "#ffffffff",
                       borderRadius: "8px",
                       padding: "8px",
-                      boxShadow: "inset 0 0 0 1px #eef2f7",
                     }}
                   >
                     <img

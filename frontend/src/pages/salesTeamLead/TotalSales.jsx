@@ -7,7 +7,7 @@ const TotalSales = () => {
       <div id="totalSales-main-content">
         <h1 style={{ fontWeight: "700" }}>Total Sales</h1>
         <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
-          <table>
+          <table id="stl-table">
             <thead>
               <th> </th>
               <th>Company Name</th>
