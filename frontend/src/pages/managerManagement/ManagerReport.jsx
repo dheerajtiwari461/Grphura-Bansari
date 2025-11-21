@@ -3,7 +3,7 @@ import totalProjects from "../../assets/managerManagement/managerReport/totalPro
 import completedProjects from "../../assets/managerManagement/managerReport/completedprojects.png";
 import pendingProjects from "../../assets/managerManagement/managerReport/pendingProjects.png";
 import payout from "../../assets/managerManagement/managerReport/payout.png";
-import download from "../../assets/managerManagement/managerReport/download.png"
+import download from "../../assets/managerManagement/managerReport/download.png";
 import "../../style/salesExecutive/dashboard.css";
 import "../../style/managementEmployee/dashboard.css";
 // import { Button } from "bootstrap";
@@ -56,7 +56,7 @@ const ManagerReport = () => {
               <div id="clients">
                 <h1>My Projects</h1>
                 <div id="client-list">
-                  <table>
+                  <table style={{ width: "100%" }}>
                     <thead>
                       <th> </th>
                       <th>Company Name</th>

@@ -20,7 +20,7 @@ const TransferDataToFin = () => {
               </div>
               <div id="client-list">
                 <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
-                  <table>
+                  <table style={{ width: "100%" }}>
                     <thead>
                       <th> </th>
                       <th>Company Name</th>
@@ -127,39 +127,62 @@ const TransferDataToFin = () => {
                   </table>
                 </div>
                 {showPopup && (
-  <div className="overlay" onClick={closePopup}>
-    <div id="transfer-popup" onClick={(e) => e.stopPropagation()}>
+                  <div className="overlay" onClick={closePopup}>
+                    <div
+                      id="transfer-popup"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <div id="popup-grid">
+                        {/* LEFT SIDE INPUTS */}
+                        <input
+                          type="text"
+                          className="popup-input"
+                          placeholder="Company Name"
+                        />
+                        <input
+                          type="text"
+                          className="popup-input"
+                          placeholder="Amount"
+                        />
 
-      <div id="popup-grid">
+                        <input
+                          type="text"
+                          className="popup-input"
+                          placeholder="Client Name"
+                        />
+                        <select className="popup-select">
+                          <option>TL Name</option>
+                        </select>
 
-        {/* LEFT SIDE INPUTS */}
-        <input type="text" className="popup-input" placeholder="Company Name" />
-        <input type="text" className="popup-input" placeholder="Amount" />
+                        <input
+                          type="email"
+                          className="popup-input"
+                          placeholder="Email_id"
+                        />
+                        <select className="popup-select">
+                          <option>Sales Executive</option>
+                        </select>
 
-        <input type="text" className="popup-input" placeholder="Client Name" />
-        <select className="popup-select">
-          <option>TL Name</option>
-        </select>
+                        <input
+                          type="text"
+                          className="popup-input"
+                          placeholder="Contact no."
+                        />
+                        <select className="popup-select">
+                          <option>Services</option>
+                        </select>
 
-        <input type="email" className="popup-input" placeholder="Email_id" />
-        <select className="popup-select">
-          <option>Sales Executive</option>
-        </select>
+                        <input
+                          type="text"
+                          className="popup-input"
+                          placeholder="Date"
+                        />
+                      </div>
 
-        <input type="text" className="popup-input" placeholder="Contact no." />
-        <select className="popup-select">
-          <option>Services</option>
-        </select>
-
-        <input type="text" className="popup-input" placeholder="Date" />
-
-      </div>
-
-      <button id="popup-save">Add New +</button>
-    </div>
-  </div>
-)}
-
+                      <button id="popup-save">Add New +</button>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </section>
@@ -168,7 +191,7 @@ const TransferDataToFin = () => {
               <h1>Transfer Data History</h1>
               <div id="client-list">
                 <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
-                  <table>
+                  <table style={{ width: "100%" }}>
                     <thead>
                       <th> </th>
                       <th>Company Name</th>

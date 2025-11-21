@@ -62,7 +62,6 @@ import FM_Feedbacks from "../pages/feedbackManager/Feedbacks";
 import FM_Salary from "../pages/feedbackManager/FeedbackSalary";
 import FM_Complaint from "../pages/feedbackManager/Complaints";
 import FM_TeamReport from "../pages/feedbackManager/TeamReport";
-import FM_Salary from "../pages/feedbackManager/FeedbackSalary";
 
 // feedbackEmployee
 import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
@@ -73,7 +72,7 @@ import FE_Salary from "../pages/feedBackEmployee/Salary";
 // finance
 import F_Dashboard from "../pages/finance/Dashboard";
 import F_Employeemanagement from "../pages/finance/Employeemanagement";
-import F_ClientManagement from "../pages/finance/clientManagement";
+import F_ClientManagement from "../pages/finance/ClientManagement";
 import F_InvoiceUI from "../pages/finance/FinanceInvoice";
 import F_TransferDataToAccountant from "../pages/finance/TransferDataToAccountant";
 import F_AddEmployeePayout from "../pages/finance/AddEmployeePayout";
@@ -84,7 +83,7 @@ import F_Payout from "../pages/finance/Payout";
 import A_Dashboard from "../pages/accountant/Dashboard";
 import A_ClientManagement from "../pages/accountant/ClientManagement";
 import A_Invoice from "../pages/accountant/Invoice";
-import A_PreviousClients from "../pages/accountant/PreviousClients"
+import A_PreviousClients from "../pages/accountant/PreviousClients";
 
 export const roleBasedRoutes = {
   salesExecutive: [
@@ -151,12 +150,10 @@ export const roleBasedRoutes = {
   ],
 
   feedbackManager: [
-
-  { path: "/dashboard", element: <FM_Dashboard /> },
-  { path: "/salary", element: <FM_Salary /> },
-  // { path: "/report", element: <FM_Report /> },
-  { path: "/feedbacks", element: <FM_Feedbacks /> },
-  {path: "/complaints", element: <FM_Complaint/>},
+    { path: "/dashboard", element: <FM_Dashboard /> },
+    { path: "/salary", element: <FM_Salary /> },
+    { path: "/feedbacks", element: <FM_Feedbacks /> },
+    { path: "/complaints", element: <FM_Complaint /> },
     { path: "/team-report", element: <FM_TeamReport /> },
   ],
 
@@ -166,6 +163,7 @@ export const roleBasedRoutes = {
     { path: "/complaints", element: <FE_Complaints /> },
     { path: "/salary", element: <FE_Salary /> },
   ],
+
   finance: [
     { path: "/dashboard", element: <F_Dashboard /> },
     { path: "/employee-management", element: <F_Employeemanagement /> },
@@ -183,7 +181,4 @@ export const roleBasedRoutes = {
     { path: "/invoice", element: <A_Invoice /> },
     { path: "/previous-clients", element: <A_PreviousClients /> },
   ],
-
-
-
 };

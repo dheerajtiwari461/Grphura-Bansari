@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import calender from "../../assets/salesExecutive/report/calander.png";
-import "../../style/salesExecutive/report.css"
+import "../../style/salesExecutive/report.css";
+
 const Report = () => {
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({ callStatus: "", comment: "" });
@@ -35,7 +36,11 @@ const Report = () => {
   };
 
   return (
-    <div id="report-container" className="min-h-screen" style={{ backgroundColor: "#ffffffff" }}>
+    <div
+      id="report-container"
+      className="min-h-screen"
+      style={{ backgroundColor: "#ffffffff" }}
+    >
       {/* Report Title */}
       <div style={{ padding: "28px 32px 24px" }}>
         <h1
@@ -44,6 +49,7 @@ const Report = () => {
             fontWeight: "500",
             color: "#333",
             margin: 0,
+            textAlign: "flex-start",
           }}
         >
           Report
@@ -59,7 +65,6 @@ const Report = () => {
           border: "1px solid #e5e7eb",
           borderRadius: "1rem",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.05)",
-          // padding: "24px",
         }}
       >
         <h2
@@ -67,11 +72,12 @@ const Report = () => {
             fontSize: "24px",
             fontWeight: "500",
             color: "#000",
-            // marginBottom: "16px",
+            marginBottom: "30px",
           }}
         >
           Today's Call List
         </h2>
+
         <div
           style={{
             backgroundColor: "#fff",
@@ -80,8 +86,14 @@ const Report = () => {
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.05)",
           }}
         >
-          <div style={{ overflowX: "auto" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse" }}>
+          <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
+            <table
+              style={{
+                width: "100%",
+                minWidth: "900px",
+                borderCollapse: "collapse",
+              }}
+            >
               <thead>
                 <tr
                   style={{
@@ -89,83 +101,17 @@ const Report = () => {
                     borderBottom: "1px solid #e5e7eb",
                   }}
                 >
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  ></th>
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  >
-                    Company Name
-                  </th>
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  >
-                    Client Name
-                  </th>
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  >
-                    Email_id
-                  </th>
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  >
-                    Contact no.
-                  </th>
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  >
-                    Reminder date
-                  </th>
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  >
-                    Activity
-                  </th>
+                  <th style={{ padding: "16px 20px" }}></th>
+
+                  <th style={{ padding: "16px 20px" }}>Company Name</th>
+                  <th style={{ padding: "16px 20px" }}>Client Name</th>
+                  <th style={{ padding: "16px 20px" }}>Email_id</th>
+                  <th style={{ padding: "16px 20px" }}>Contact no.</th>
+                  <th style={{ padding: "16px 20px" }}>Reminder date</th>
+                  <th style={{ padding: "16px 20px" }}>Activity</th>
                 </tr>
               </thead>
+
               <tbody>
                 {todaysCalls.map((row) => (
                   <tr
@@ -175,83 +121,15 @@ const Report = () => {
                       borderBottom: "1px solid #e5e7eb",
                     }}
                   >
-                    <td
-                      style={{
-                        padding: "16px 8px 16px 20px",
-                        fontSize: "14px",
-                        color: "#000",
-                        fontWeight: "500",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          gap: "8px",
-                        }}
-                      >
-                        <span style={{ color: "#6b7280" }}>⋮</span>
-                      </div>
+                    <td style={{ padding: "16px 20px" }}>
+                      <span style={{ color: "#6b7280" }}>⋮</span>
                     </td>
-                    <td
-                      style={{
-                        padding: "16px 8px 16px 20px",
-                        fontSize: "14px",
-                        color: "#000",
-                        fontWeight: "500",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          gap: "8px",
-                        }}
-                      >
-                        {row.company}
-                      </div>
-                    </td>
-                    <td
-                      style={{
-                        padding: "16px 20px",
-                        fontSize: "14px",
-                        color: "#000",
-                        fontWeight: "500",
-                      }}
-                    >
-                      {row.client}
-                    </td>
-                    <td
-                      style={{
-                        padding: "16px 20px",
-                        fontSize: "14px",
-                        color: "#000",
-                        fontWeight: "500",
-                      }}
-                    >
-                      {row.email}
-                    </td>
-                    <td
-                      style={{
-                        padding: "16px 20px",
-                        fontSize: "14px",
-                        color: "#000",
-                        fontWeight: "500",
-                      }}
-                    >
-                      {row.contact}
-                    </td>
-                    <td
-                      style={{
-                        padding: "16px 20px",
-                        fontSize: "14px",
-                        color: "#000",
-                        fontWeight: "500",
-                      }}
-                    >
-                      {row.reminder}
-                    </td>
-                    <td style={{ padding: "16px 20px", fontSize: "14px" }}>
+                    <td style={{ padding: "16px 20px" }}>{row.company}</td>
+                    <td style={{ padding: "16px 20px" }}>{row.client}</td>
+                    <td style={{ padding: "16px 20px" }}>{row.email}</td>
+                    <td style={{ padding: "16px 20px" }}>{row.contact}</td>
+                    <td style={{ padding: "16px 20px" }}>{row.reminder}</td>
+                    <td style={{ padding: "16px 20px" }}>
                       <button
                         onClick={() => setShowModal(true)}
                         style={{
@@ -259,9 +137,6 @@ const Report = () => {
                           color: "white",
                           border: "none",
                           borderRadius: "4px",
-                          padding: "4px 24px 28px 12px",
-                          fontSize: "14px",
-                          fontWeight: "500",
                           cursor: "pointer",
                         }}
                       >
@@ -310,14 +185,8 @@ const Report = () => {
             justifyContent: "space-between",
           }}
         >
-          <div
-            style={{
-              position: "relative",
-              flex: "1",
-              minWidth: "200px",
-              maxWidth: "400px",
-            }}
-          >
+          {/* Start Date */}
+          <div style={{ position: "relative", flex: "1", minWidth: "200px" }}>
             <input
               type="text"
               placeholder="Start Date"
@@ -327,11 +196,7 @@ const Report = () => {
                 borderRadius: "8px",
                 padding: "0 40px 0 16px",
                 fontSize: "20px",
-                fontWeight: "500",
-                outline: "none",
-                backgroundColor: "white",
                 border: "3px solid #e5e7eb",
-                boxShadow: "0 4px 80px rgba(0, 0, 0, 0.05)",
               }}
             />
             <span
@@ -340,20 +205,14 @@ const Report = () => {
                 right: "14px",
                 top: "50%",
                 transform: "translateY(-50%)",
-                fontSize: "18px",
               }}
             >
               <img src={calender} alt="" />
             </span>
           </div>
-          <div
-            style={{
-              position: "relative",
-              flex: "1",
-              minWidth: "200px",
-              maxWidth: "400px",
-            }}
-          >
+
+          {/* End Date */}
+          <div style={{ position: "relative", flex: "1", minWidth: "200px" }}>
             <input
               type="text"
               placeholder="End Date"
@@ -363,11 +222,7 @@ const Report = () => {
                 borderRadius: "8px",
                 padding: "0 40px 0 16px",
                 fontSize: "20px",
-                fontWeight: "500",
-                outline: "none",
-                backgroundColor: "white",
                 border: "3px solid #e5e7eb",
-                boxShadow: "0 4px 80px rgba(0, 0, 0, 0.05)",
               }}
             />
             <span
@@ -376,47 +231,44 @@ const Report = () => {
                 right: "14px",
                 top: "50%",
                 transform: "translateY(-50%)",
-                fontSize: "18px",
               }}
             >
               <img src={calender} alt="" />
             </span>
           </div>
-          <span
+
+          <button
             style={{
-              padding: "10px 0px 10px 0px",
-              //   backgroundColor:"black"
+              padding: "8px 32px",
+              backgroundColor: "#4f46e5",
+              color: "white",
+              border: "none",
+              borderRadius: "8px",
+              cursor: "pointer",
             }}
           >
-            <button
-              style={{
-                // height: "48px",
-                padding: "6px 32px",
-                backgroundColor: "#4f46e5",
-                color: "white",
-                border: "none",
-                borderRadius: "8px",
-                fontSize: "14px",
-                fontWeight: "500",
-                cursor: "pointer",
-              }}
-            >
-              Search
-            </button>
-          </span>
+            Search
+          </button>
         </div>
 
+        {/* Past Call Table */}
         <div
           style={{
             backgroundColor: "#fff",
-            border: "1px solid #e5e7eb" /* same as Tailwind’s gray-200 */,
-            borderRadius: "1rem" /* 16px rounded corners */,
+            border: "1px solid #e5e7eb",
+            borderRadius: "1rem",
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.05)",
             padding: "24px",
           }}
         >
-          <div style={{ overflowX: "auto" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse" }}>
+          <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
+            <table
+              style={{
+                width: "100%",
+                minWidth: "900px",
+                borderCollapse: "collapse",
+              }}
+            >
               <thead>
                 <tr
                   style={{
@@ -424,83 +276,16 @@ const Report = () => {
                     borderBottom: "1px solid #e5e7eb",
                   }}
                 >
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  ></th>
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  >
-                    Company Name
-                  </th>
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  >
-                    Client Name
-                  </th>
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  >
-                    Email_id
-                  </th>
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  >
-                    Contact no.
-                  </th>
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  >
-                    Reminder date
-                  </th>
-                  <th
-                    style={{
-                      padding: "16px 20px",
-                      textAlign: "left",
-                      fontSize: "14px",
-                      fontWeight: "600",
-                      color: "#000",
-                    }}
-                  >
-                    Comment
-                  </th>
+                  <th style={{ padding: "16px 20px" }}></th>
+                  <th style={{ padding: "16px 20px" }}>Company Name</th>
+                  <th style={{ padding: "16px 20px" }}>Client Name</th>
+                  <th style={{ padding: "16px 20px" }}>Email_id</th>
+                  <th style={{ padding: "16px 20px" }}>Contact no.</th>
+                  <th style={{ padding: "16px 20px" }}>Reminder date</th>
+                  <th style={{ padding: "16px 20px" }}>Comment</th>
                 </tr>
               </thead>
+
               <tbody>
                 {pastCalls.map((row, i) => (
                   <tr
@@ -510,95 +295,18 @@ const Report = () => {
                       borderBottom: "1px solid #e5e7eb",
                     }}
                   >
-                    <td
-                      style={{
-                        padding: "16px 8px 16px 20px",
-                        fontSize: "14px",
-                        color: "#000",
-                        fontWeight: "500",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          gap: "8px",
-                        }}
-                      >
-                        <span
-                          style={{
-                            color: "#6b7280",
-                            margin: "0px 0px 0px 0px",
-                          }}
-                        >
-                          ⋮
-                        </span>
-                      </div>
+                    <td style={{ padding: "16px 20px" }}>
+                      <span style={{ color: "#6b7280" }}>⋮</span>
                     </td>
-                    <td
-                      style={{
-                        padding: "16px 8px 16px 20px",
-                        fontSize: "14px",
-                        color: "#000",
-                        fontWeight: "500",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          gap: "8px",
-                        }}
-                      >
-                        {row.company}
-                      </div>
-                    </td>
+                    <td style={{ padding: "16px 20px" }}>{row.company}</td>
+                    <td style={{ padding: "16px 20px" }}>{row.client}</td>
+                    <td style={{ padding: "16px 20px" }}>{row.email}</td>
+                    <td style={{ padding: "16px 20px" }}>{row.contact}</td>
+                    <td style={{ padding: "16px 20px" }}>{row.reminder}</td>
                     <td
                       style={{
                         padding: "16px 20px",
-                        fontSize: "14px",
-                        color: "#000",
-                        fontWeight: "500",
-                      }}
-                    >
-                      {row.client}
-                    </td>
-                    <td
-                      style={{
-                        padding: "16px 20px",
-                        fontSize: "14px",
-                        color: "#000",
-                        fontWeight: "500",
-                      }}
-                    >
-                      {row.email}
-                    </td>
-                    <td
-                      style={{
-                        padding: "16px 20px",
-                        fontSize: "14px",
-                        color: "#000",
-                        fontWeight: "500",
-                      }}
-                    >
-                      {row.contact}
-                    </td>
-                    <td
-                      style={{
-                        padding: "16px 20px",
-                        fontSize: "14px",
-                        color: "#000",
-                        fontWeight: "500",
-                      }}
-                    >
-                      {row.reminder}
-                    </td>
-                    <td
-                      style={{
-                        padding: "16px 20px",
-                        fontSize: "14px",
                         color: i === 0 ? "#4f46e5" : "#000",
-                        fontWeight: "500",
                       }}
                     >
                       {row.comment}
@@ -651,7 +359,6 @@ const Report = () => {
                 fontSize: "24px",
                 cursor: "pointer",
                 color: "#9ca3af",
-                lineHeight: "1",
               }}
             >
               ×
@@ -669,6 +376,7 @@ const Report = () => {
               Update Call Details
             </h2>
 
+            {/* Radio Buttons */}
             <div style={{ marginBottom: "24px" }}>
               <div
                 style={{
@@ -682,49 +390,44 @@ const Report = () => {
                   { value: "talk", label: "Talk" },
                   { value: "notTalk", label: "Not Talk" },
                   { value: "delete", label: "Delete Client's Profile" },
-                ].map((option) => (
+                ].map((opt) => (
                   <label
-                    key={option.value}
+                    key={opt.value}
                     style={{
                       display: "flex",
-                      alignItems: "center",
                       gap: "8px",
-                      fontSize: "14px",
+                      alignItems: "center",
                       cursor: "pointer",
                     }}
                   >
                     <input
                       type="radio"
                       name="callStatus"
-                      value={option.value}
-                      checked={formData.callStatus === option.value}
+                      value={opt.value}
+                      checked={formData.callStatus === opt.value}
                       onChange={(e) =>
                         setFormData({ ...formData, callStatus: e.target.value })
                       }
-                      style={{
-                        width: "16px",
-                        height: "16px",
-                        cursor: "pointer",
-                      }}
                     />
-                    {option.label}
+                    {opt.label}
                   </label>
                 ))}
               </div>
             </div>
 
+            {/* Comment */}
             <div style={{ marginBottom: "24px" }}>
               <label
                 style={{
-                  display: "block",
-                  marginBottom: "8px",
                   fontSize: "14px",
                   fontWeight: "500",
-                  color: "#374151",
+                  display: "block",
+                  marginBottom: "8px",
                 }}
               >
                 Comment
               </label>
+
               <textarea
                 rows="5"
                 value={formData.comment}
@@ -736,16 +439,14 @@ const Report = () => {
                   width: "100%",
                   border: "1px solid #d1d5db",
                   borderRadius: "4px",
-                  backgroundColor: "#f9fafb",
                   padding: "12px",
-                  fontSize: "14px",
-                  outline: "none",
+                  backgroundColor: "#f9fafb",
                   resize: "vertical",
-                  fontFamily: "inherit",
                 }}
               />
             </div>
 
+            {/* Submit Button */}
             <div style={{ textAlign: "center" }}>
               <button
                 onClick={handleSubmit}

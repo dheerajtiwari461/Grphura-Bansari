@@ -27,12 +27,10 @@ const Dashboard = () => {
     <main>
       <div id="dashboard">
         <div id="dashboard-container">
-
           {/* TOP CARDS */}
           <section id="dashboard-data">
             <h1>Dashboard</h1>
             <div id="data-wrap">
-
               <div id="data">
                 <h3>TOTAL CLIENTS</h3>
                 <div id="num-vector">
@@ -64,7 +62,6 @@ const Dashboard = () => {
                   <img src={payout} alt="" />
                 </div>
               </div>
-
             </div>
           </section>
 
@@ -76,7 +73,7 @@ const Dashboard = () => {
 
                 <div id="client-list">
                   <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
-                    <table>
+                    <table style={{ width: "100%" }}>
                       <thead>
                         <tr>
                           <th> </th>
@@ -190,58 +187,159 @@ const Dashboard = () => {
                           }}
                         >
                           {/* STEP 1 */}
-                          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
-                            <CheckCircle style={{ width: "64px", height: "64px", color: "#11CE4D", marginBottom: "8px" }} />
+                          <div
+                            style={{
+                              display: "flex",
+                              flexDirection: "column",
+                              alignItems: "center",
+                              flex: 1,
+                            }}
+                          >
+                            <CheckCircle
+                              style={{
+                                width: "64px",
+                                height: "64px",
+                                color: "#11CE4D",
+                                marginBottom: "8px",
+                              }}
+                            />
                             <p style={{ fontWeight: "bold" }}>Payment Done</p>
                             <small>{selectedTrack?.payment.date}</small>
                           </div>
 
-                          <div style={{ flex: 1, height: "4px", backgroundColor: "#11CE4D", margin: "0 8px" }}></div>
+                          <div
+                            style={{
+                              flex: 1,
+                              height: "4px",
+                              backgroundColor: "#11CE4D",
+                              margin: "0 8px",
+                            }}
+                          ></div>
 
                           {/* STEP 2 */}
-                          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
-                            <CheckCircle style={{ width: "64px", height: "64px", color: "#11CE4D", marginBottom: "8px" }} />
-                            <p style={{ fontWeight: "bold" }}>Financial Status</p>
+                          <div
+                            style={{
+                              display: "flex",
+                              flexDirection: "column",
+                              alignItems: "center",
+                              flex: 1,
+                            }}
+                          >
+                            <CheckCircle
+                              style={{
+                                width: "64px",
+                                height: "64px",
+                                color: "#11CE4D",
+                                marginBottom: "8px",
+                              }}
+                            />
+                            <p style={{ fontWeight: "bold" }}>
+                              Financial Status
+                            </p>
                             <small>{selectedTrack?.finance}</small>
                           </div>
 
-                          <div style={{ flex: 1, height: "4px", backgroundColor: "#11CE4D", margin: "0 8px" }}></div>
+                          <div
+                            style={{
+                              flex: 1,
+                              height: "4px",
+                              backgroundColor: "#11CE4D",
+                              margin: "0 8px",
+                            }}
+                          ></div>
 
                           {/* STEP 3 */}
-                          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
-                            <CheckCircle style={{ width: "64px", height: "64px", color: "#11CE4D", marginBottom: "8px" }} />
-                            <p style={{ fontWeight: "bold" }}>Management Status</p>
+                          <div
+                            style={{
+                              display: "flex",
+                              flexDirection: "column",
+                              alignItems: "center",
+                              flex: 1,
+                            }}
+                          >
+                            <CheckCircle
+                              style={{
+                                width: "64px",
+                                height: "64px",
+                                color: "#11CE4D",
+                                marginBottom: "8px",
+                              }}
+                            />
+                            <p style={{ fontWeight: "bold" }}>
+                              Management Status
+                            </p>
                             <small>{selectedTrack?.management}</small>
                           </div>
 
-                          <div style={{ flex: 1, height: "4px", backgroundColor: "#11CE4D", margin: "0 8px" }}></div>
+                          <div
+                            style={{
+                              flex: 1,
+                              height: "4px",
+                              backgroundColor: "#11CE4D",
+                              margin: "0 8px",
+                            }}
+                          ></div>
 
                           {/* STEP 4 */}
-                          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
-                            <CheckCircle style={{ width: "64px", height: "64px", color: "#11CE4D", marginBottom: "8px" }} />
-                            <p style={{ fontWeight: "bold" }}>Employee Update</p>
+                          <div
+                            style={{
+                              display: "flex",
+                              flexDirection: "column",
+                              alignItems: "center",
+                              flex: 1,
+                            }}
+                          >
+                            <CheckCircle
+                              style={{
+                                width: "64px",
+                                height: "64px",
+                                color: "#11CE4D",
+                                marginBottom: "8px",
+                              }}
+                            />
+                            <p style={{ fontWeight: "bold" }}>
+                              Employee Update
+                            </p>
                             <small>{selectedTrack?.employee}</small>
                           </div>
 
-                          <div style={{ flex: 1, height: "4px", backgroundColor: "#D41A1A", margin: "0 8px" }}></div>
+                          <div
+                            style={{
+                              flex: 1,
+                              height: "4px",
+                              backgroundColor: "#D41A1A",
+                              margin: "0 8px",
+                            }}
+                          ></div>
 
                           {/* STEP 5 */}
-                          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
-                            <XCircle style={{ width: "64px", height: "64px", color: "#D41A1A", marginBottom: "8px" }} />
+                          <div
+                            style={{
+                              display: "flex",
+                              flexDirection: "column",
+                              alignItems: "center",
+                              flex: 1,
+                            }}
+                          >
+                            <XCircle
+                              style={{
+                                width: "64px",
+                                height: "64px",
+                                color: "#D41A1A",
+                                marginBottom: "8px",
+                              }}
+                            />
                             <p style={{ fontWeight: "bold" }}>Hosting Status</p>
                             <small>{selectedTrack?.hosting}</small>
                           </div>
                         </div>
-
                       </div>
                     </div>
                   )}
-
                 </div>
               </div>
             </div>
           </section>
-
         </div>
       </div>
     </main>

@@ -9,7 +9,7 @@ function AddEmployeePayout() {
         <h1 id="page_heading">Add Employee Payout</h1>
         <div id="payout_container">
           <div id="left_box">
-            <h2>Add Details</h2>
+            <h3>Add Details</h3>
             <form id="payout_form">
               <div id="field">
                 <input
@@ -83,7 +83,7 @@ function AddEmployeePayout() {
           </div>
 
           <div id="right_box">
-            <h2>View Details</h2>
+            <h3>View Details</h3>
             <div id="rb-row1">
               <span>1. Company Name</span>
               <span>Invoice no.</span>

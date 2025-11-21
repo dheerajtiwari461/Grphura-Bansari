@@ -85,7 +85,7 @@ const Review = () => {
                   {project.invoice}
                 </span>
                 {open === index ? (
-                <ChevronDown size={25} />
+                  <ChevronDown size={25} />
                 ) : (
                   <ChevronUp size={25} />
                 )}
@@ -219,34 +219,34 @@ const Review = () => {
                           />
                         </Form.Group>
 
-                       <div className="text-end mt-3 d-flex gap-4">
-                        <Button
-                          style={{
-                            backgroundColor: "#4972E8",
-                            border: "none",
-                            fontSize: "14px",
-                            fontWeight: "500",
-                            width:"157px",
-                            height:"33px",
-                            padding:0
-                          }}
-                        >
-                          Edit Team
-                        </Button>
-                        <Button
-                          style={{
-                            backgroundColor: "#4972E8",
-                            border: "none",
-                            padding: 0,
-                            fontSize: "14px",
-                            fontWeight: "500",
-                             width:"157px",
-                            height:"33px",
-                          }}
-                        >
-                          View Team
-                        </Button>
-                      </div>
+                        <div className="text-end mt-3 d-flex gap-4">
+                          <Button
+                            style={{
+                              backgroundColor: "#4972E8",
+                              border: "none",
+                              fontSize: "14px",
+                              fontWeight: "500",
+                              width: "157px",
+                              height: "33px",
+                              padding: 0,
+                            }}
+                          >
+                            Edit Team
+                          </Button>
+                          <Button
+                            style={{
+                              backgroundColor: "#4972E8",
+                              border: "none",
+                              padding: 0,
+                              fontSize: "14px",
+                              fontWeight: "500",
+                              width: "157px",
+                              height: "33px",
+                            }}
+                          >
+                            View Team
+                          </Button>
+                        </div>
                       </Col>
                     </Row>
                   </Form>
@@ -475,46 +475,46 @@ const Review = () => {
                       </div>
                     </div>
                   </div>
-                  
                 </Card.Body>
               )}
-              
             </div>
             <div className="d-flex justify-content-center align-items-center">
-                      <div className="text-end mt-3 d-flex gap-3">
-                        <Button
-                          style={{
-                            backgroundColor: "#008000",
-                            border: "none",
-                            height:'33px',
-                            width:'157px',
-                            fontSize: "14px",
-                            fontWeight: "500",
-                          }}
-                        >
-                          Approve
-                        </Button>
-                        <Button
-                          style={{
-                            backgroundColor: "#FF0000",
-                            border: "none",
-                            height:'33px',
-                            width:'157px',
-                            fontSize: "14px",
-                            fontWeight: "500",
-                          }}
-                        >
-                          Reject
-                        </Button>
-                      </div>
-                    </div>
-
+              <div className="text-end mt-3 d-flex gap-3">
+                <Button
+                  style={{
+                    backgroundColor: "#008000",
+                    border: "none",
+                    height: "33px",
+                    width: "157px",
+                    fontSize: "14px",
+                    fontWeight: "500",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  Approve
+                </Button>
+                <Button
+                  style={{
+                    backgroundColor: "#FF0000",
+                    border: "none",
+                    height: "33px",
+                    width: "157px",
+                    fontSize: "14px",
+                    fontWeight: "500",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  Reject
+                </Button>
+              </div>
+            </div>
           </Card>
-          
         ))}
-        
       </Container>
-      
     </div>
   );
 };

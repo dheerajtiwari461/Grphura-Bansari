@@ -25,14 +25,14 @@ import ManagerManagementHeader from "./components/managerManagement/Header";
 import FeedbackManagerSidebar from "./components/feedbackmanager/Sidebar";
 import FeedbackManagerHeader from "./components/feedbackmanager/Header";
 
-import FeedbackEmployeeSidebar from "./components/feedbackEmployee/Sidebar"
-import FeedbackEmployeeHeader from "./components/feedbackEmployee/Header"
+import FeedbackEmployeeSidebar from "./components/feedbackEmployee/Sidebar";
+import FeedbackEmployeeHeader from "./components/feedbackEmployee/Header";
 
-import FinanceSidebar from "./components/finance/Sidebar"
-import FinanceHeader from "./components/finance/Header"
+import FinanceSidebar from "./components/finance/Sidebar";
+import FinanceHeader from "./components/finance/Header";
 
-import AccountantSidebar from "./components/accountant/Sidebar"
-import AccountantHeader from "./components/accountant/Header"
+import AccountantSidebar from "./components/accountant/Sidebar";
+import AccountantHeader from "./components/accountant/Header";
 
 function App() {
   const role = localStorage.getItem("role") || "accountant"; // Example fallback
@@ -172,7 +172,7 @@ function App() {
             </div>
           </>
         );
-      
+
       case "feedbackEmployee":
         return (
           <>
@@ -191,7 +191,7 @@ function App() {
             </div>
           </>
         );
-      
+
       case "finance":
         return (
           <>

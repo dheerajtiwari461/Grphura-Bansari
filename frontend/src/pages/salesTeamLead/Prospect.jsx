@@ -105,7 +105,7 @@ function Prospect() {
         </div>
 
         <div className="tableContainer">
-          <table>
+          <table style={{ width: "100%" }}>
             <thead>
               <tr>
                 <th></th>
@@ -226,6 +226,14 @@ function Prospect() {
                 </p>
               </div>
 
+              <div className="update-row">
+                <p className="date">25/06/2025 07:04 PM</p>
+                <p className="desc">
+                  I cannot directly generate HTML and CSS from an image of a
+                  dashboard. My capabilities do not extend to converting visual
+                  layouts into code.
+                </p>
+              </div>
               <div className="update-row">
                 <p className="date">25/06/2025 07:04 PM</p>
                 <p className="desc">

@@ -6,7 +6,7 @@ function UserData() {
     <>
       <div className="main">
         <h1>User Data</h1>
-        <div class="table-content">
+        <div className="table-content">
           <table className="table-data">
             <thead>
               <tr>

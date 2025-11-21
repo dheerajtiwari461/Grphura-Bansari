@@ -4,7 +4,6 @@ import totalCall from "../../assets/salesTeamLead/Dashboard/totalCall.png";
 import prospect from "../../assets/salesTeamLead/Dashboard/Prospect.png";
 import clientData from "../../assets/salesTeamLead/Dashboard/clientData.png";
 import "../../style/salesTeamLead/dashboard.css";
-// import { Button } from "bootstrap";
 
 const Dashboard = () => {
   const [showUpdatePopup, setShowUpdatepopup] = useState(false);
@@ -29,6 +28,7 @@ const Dashboard = () => {
                   <img src={teamMember} alt="" />
                 </div>
               </div>
+
               <div id="data">
                 <h3>TOTAL CALL BY TEAM</h3>
                 <div id="num-vector">
@@ -36,6 +36,7 @@ const Dashboard = () => {
                   <img src={totalCall} alt="" />
                 </div>
               </div>
+
               <div id="data">
                 <h3>TOTAL PROSPECT</h3>
                 <div id="num-vector">
@@ -43,6 +44,7 @@ const Dashboard = () => {
                   <img src={prospect} alt="" />
                 </div>
               </div>
+
               <div id="data">
                 <h3>TOTAL CLIENT DATA</h3>
                 <div id="num-vector">
@@ -52,151 +54,53 @@ const Dashboard = () => {
               </div>
             </div>
           </section>
+
           <section id="hot-clients">
             <div id="container">
               <div id="clients">
                 <h1>Total Call</h1>
+
                 <div
                   id="client-list"
                   style={{ overflowX: "auto", whiteSpace: "nowrap" }}
                 >
                   <table id="stl-table">
                     <thead>
-                      <th> </th>
-                      <th>Company Name</th>
-                      <th>Client Name</th>
-                      <th>Email_id</th>
-                      <th>Contact no.</th>
-                      <th>Reminder Date</th>
-                      <th>Activity</th>
-                      <th>Last Update</th>
+                      <tr>
+                        <th> </th>
+                        <th>Company Name</th>
+                        <th>Client Name</th>
+                        <th>Email_id</th>
+                        <th>Contact no.</th>
+                        <th>Reminder Date</th>
+                        <th>Activity</th>
+                        <th>Last Update</th>
+                      </tr>
                     </thead>
-                    <tr>
-                      <td>1</td>
-                      <td>Graphura India</td>
-                      <td>Vivek Kumar</td>
-                      <td>vivek@gmail.com</td>
-                      <td>0123456789</td>
-                      <td>10/10/25</td>
-                      <td>
-                        <button onClick={openUpdatePopup}>Update</button>
-                      </td>
-                      <td>
-                        <button onClick={openViewPopup}>View</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Graphura India</td>
-                      <td>Vivek Kumar</td>
-                      <td>vivek@gmail.com</td>
-                      <td>0123456789</td>
-                      <td>10/10/25</td>
-                      <td>
-                        <button onClick={openUpdatePopup}>Update</button>
-                      </td>
-                      <td>
-                        <button onClick={openViewPopup}>View</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Graphura India</td>
-                      <td>Vivek Kumar</td>
-                      <td>vivek@gmail.com</td>
-                      <td>0123456789</td>
-                      <td>10/10/25</td>
-                      <td>
-                        <button onClick={openUpdatePopup}>Update</button>
-                      </td>
-                      <td>
-                        <button onClick={openViewPopup}>View</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Graphura India</td>
-                      <td>Vivek Kumar</td>
-                      <td>vivek@gmail.com</td>
-                      <td>0123456789</td>
-                      <td>10/10/25</td>
-                      <td>
-                        <button onClick={openUpdatePopup}>Update</button>
-                      </td>
-                      <td>
-                        <button onClick={openViewPopup}>View</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Graphura India</td>
-                      <td>Vivek Kumar</td>
-                      <td>vivek@gmail.com</td>
-                      <td>0123456789</td>
-                      <td>10/10/25</td>
-                      <td>
-                        <button onClick={openUpdatePopup}>Update</button>
-                      </td>
-                      <td>
-                        <button onClick={openViewPopup}>View</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>Graphura India</td>
-                      <td>Vivek Kumar</td>
-                      <td>vivek@gmail.com</td>
-                      <td>0123456789</td>
-                      <td>10/10/25</td>
-                      <td>
-                        <button onClick={openUpdatePopup}>Update</button>
-                      </td>
-                      <td>
-                        <button onClick={openViewPopup}>View</button>
-                      </td>
-                    </tr>
+
+                    {Array(6)
+                      .fill(0)
+                      .map((_, i) => (
+                        <tr key={i}>
+                          <td>{i + 1}</td>
+                          <td>Graphura India</td>
+                          <td>Vivek Kumar</td>
+                          <td>vivek@gmail.com</td>
+                          <td>0123456789</td>
+                          <td>10/10/25</td>
+                          <td>
+                            <button onClick={openUpdatePopup}>Update</button>
+                          </td>
+                          <td>
+                            <button onClick={openViewPopup}>View</button>
+                          </td>
+                        </tr>
+                      ))}
                   </table>
-                  {showViewPopup && (
-                    <div id="popup-overlay" onClick={closeViewPopup}>
-                      <div id="popup-box" onClick={(e) => e.stopPropagation()}>
-                        <div id="popup-header">
-                          <h3>Last Update</h3>
-                          <button id="close-btn" onClick={closeViewPopup}>
-                            Close
-                          </button>
-                        </div>
 
-                        <div id="popup-content">
-                          <div className="update-row">
-                            <p className="date">25/06/2025 07:04 PM</p>
-                            <p className="desc">
-                              I cannot directly generate HTML and CSS from an
-                              image of a dashboard. My capabilities do not
-                              extend to converting visual layouts into code.
-                            </p>
-                          </div>
+                  {/* VIEW POPUP */}
 
-                          <div className="update-row">
-                            <p className="date">25/06/2025 07:04 PM</p>
-                            <p className="desc">
-                              I cannot directly generate HTML and CSS from an
-                              image of a dashboard. My capabilities do not
-                              extend to converting visual layouts into code.
-                            </p>
-                          </div>
-
-                          <div className="update-row">
-                            <p className="date">25/06/2025 07:04 PM</p>
-                            <p className="desc">
-                              I cannot directly generate HTML and CSS from an
-                              image of a dashboard. My capabilities do not
-                              extend to converting visual layouts into code.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
+                  {/* UPDATE POPUP */}
                   {showUpdatePopup && (
                     <div id="popup-overlay" onClick={closeUpdatePopup}>
                       <div id="popup-box" onClick={(e) => e.stopPropagation()}>
@@ -247,6 +151,31 @@ const Dashboard = () => {
           </section>
         </div>
       </div>
+      {showViewPopup && (
+        <div id="popup-overlay" onClick={closeViewPopup}>
+          <div id="popup-box" onClick={(e) => e.stopPropagation()}>
+            <div id="popup-header">
+              <h3>Last Update</h3>
+              <button id="close-btn" onClick={closeViewPopup}>
+                Close
+              </button>
+            </div>
+
+            <div id="popup-content">
+              {[1, 2, 3].map((item) => (
+                <div className="update-row" key={item}>
+                  <p className="date">25/06/2025 07:04 PM</p>
+                  <p className="desc">
+                    I cannot directly generate HTML and CSS from an image of a
+                    dashboard. My capabilities do not extend to converting
+                    visual layouts into code.
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
 };

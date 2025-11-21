@@ -157,7 +157,7 @@
 
 /* ------------------- MOBILE RESPONSIVE ------------------- */
 @media (max-width: 1024px) {
-  #menu-toggle {
+  #menu-toggle span {
     display: flex;
   }
 

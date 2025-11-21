@@ -20,7 +20,7 @@ const ManagerReport = () => {
       <div id="dashboard">
         <div id="dashboard-container">
           <section id="dashboard-data">
-            <h1>Dashboard</h1>
+            <h1>Manager Report</h1>
             <div id="data-wrap">
               <div id="data">
                 <h3>TOTAL CLIENT'S DATA</h3>

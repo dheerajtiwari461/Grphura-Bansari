@@ -66,13 +66,14 @@ const Feedbacks = () => {
   return (
     <div
       className="main-content-wrapper"
-      style={{ backgroundColor: "#ffffffff", minHeight: "100vh", width: "100%" }}
+      style={{
+        backgroundColor: "#ffffffff",
+        minHeight: "100vh",
+        width: "100%",
+      }}
     >
       <style>{`
-        * {
-          box-sizing: border-box;
-        }
-
+        * 
         body {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
@@ -89,7 +90,7 @@ const Feedbacks = () => {
           margin-left: 250px; 
           width: calc(100% - 250px);
           margin-right: 0;
-          margin-top: -60px;
+          // margin-top: -60px;
         }
 
 

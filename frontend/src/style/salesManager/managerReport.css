@@ -20,6 +20,26 @@ body {
   flex-wrap: wrap;
 }
 
+#heading {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#heading-btn {
+  border: none;
+  outline: none;
+  background-color: #3660de;
+  color: #ffffff;
+  font-size: 13px;
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-bottom: 15px;
+}
+
 /* === DASHBOARD DATA SECTION === */
 #dashboard-data {
   display: flex;
@@ -188,7 +208,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   padding: 10px;
   overflow-x: auto;
-
 }
 
 #mr-table {

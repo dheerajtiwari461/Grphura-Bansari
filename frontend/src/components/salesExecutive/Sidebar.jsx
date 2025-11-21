@@ -10,7 +10,7 @@ import "../salesExecutive/sidebar.css";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleSidebar = () => setIsOpen(!isOpen);
 

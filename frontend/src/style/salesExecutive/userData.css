@@ -1,26 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-.main{
-    padding: 1.5rem;
-    margin-left: var(--sidebar-width);
-    width: calc(100% - var(--sidebar-width));
+.main {
+  padding: 1.5rem;
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
 }
 
-.main h1{
-  color: #5A5C69;
-  font-size: 36px ;
+.main h1 {
+  color: #5a5c69;
+  font-size: 36px;
 }
-.table-content{
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    margin: 20px 0px 0px 0px;
-    padding: 30px 10px 0 10px;
+
+.table-content {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin: 20px 0 0 0;
+  padding: 30px 10px 0 10px;
+  overflow-x: auto;
 }
 
 .table-data {
   width: 100%;
   border-collapse: collapse;
 }
-
 
 th,
 td {
@@ -34,7 +35,7 @@ td {
 }
 
 th {
-  color: #000000;
+  color: #000;
   font-weight: 700;
   font-size: 15px;
 }

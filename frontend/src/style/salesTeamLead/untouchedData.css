@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 :root {
   --sidebar-width: 280px;
 }
@@ -9,6 +10,7 @@
   width: calc(100% - var(--sidebar-width));
   background-color: #fff;
   transition: margin-left 0.3s ease, width 0.3s ease;
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 /* Mobile view */
@@ -19,6 +21,6 @@
   }
 }
 
-img{
-    background: none;
+img {
+  background: none;
 }

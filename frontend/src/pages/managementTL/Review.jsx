@@ -91,17 +91,23 @@ const Review = () => {
   return (
     <div
       id="untouchedData-container"
-      className="container-fluid bg-light min-vh-100"
+      className="container-fluid min-vh-100"
       style={{
         overflowX: "hidden",
         maxWidth: "100vw",
+        backgroundColor:"#ffffff"
       }}
     >
       <div className="row g-0">
         {/* Header */}
         <div className="col-12">
           <div className="d-flex justify-content-between align-items-center mb-3 pt-4 px-3">
-            <h1 className="h3 text-dark fw-semibold m-0">Review</h1>
+            <h1
+              style={{ fontSize: "35px" }}
+              className="h3 text-dark fw-semibold m-0"
+            >
+              Review
+            </h1>
           </div>
         </div>
 
@@ -190,6 +196,9 @@ const Review = () => {
                             fontSize: "15px",
                             fontWeight: 500,
                             cursor: "pointer",
+                            alignItems: "center",
+                            display: "flex",
+                            justifyContent: "center",
                           }}
                         >
                           View

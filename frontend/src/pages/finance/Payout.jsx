@@ -81,7 +81,7 @@ export default function Payout() {
           <h1>Client Management</h1>
           <div id="client-list">
             <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
-              <table>
+              <table style={{width:"100%"}}>
                 <thead>
                   <th> </th>
                   <th>Employee Id</th>
