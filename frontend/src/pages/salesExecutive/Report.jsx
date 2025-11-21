@@ -37,19 +37,26 @@ const Report = () => {
 
   return (
     <div
-      id="report-container"
+      id="sales-report-container"
       className="min-h-screen"
       style={{ backgroundColor: "#ffffffff" }}
     >
       {/* Report Title */}
-      <div style={{ padding: "28px 32px 24px" }}>
+
+      <div
+        style={{
+          padding: "28px 32px 24px",
+          // display: "flex",
+          justifyContent: "flex-start",
+        }}
+      >
         <h1
           style={{
-            fontSize: "32px",
+            fontSize: "36px",
             fontWeight: "500",
-            color: "#333",
+            color: "#5A5C69",
             margin: 0,
-            textAlign: "flex-start",
+            textAlign: "left",
           }}
         >
           Report
@@ -90,19 +97,18 @@ const Report = () => {
             <table
               style={{
                 width: "100%",
-                minWidth: "900px",
+                // minWidth: "900px",
                 borderCollapse: "collapse",
               }}
             >
-              <thead>
+              <thead className="report-thead" style={{ color: "#000000" }}>
                 <tr
                   style={{
-                    backgroundColor: "#f8f9fa",
+                    backgroundColor: "#ffffffff",
                     borderBottom: "1px solid #e5e7eb",
                   }}
                 >
-                  <th style={{ padding: "16px 20px" }}></th>
-
+                  <th style={{ padding: "16px 20px", color: "#000000" }}></th>
                   <th style={{ padding: "16px 20px" }}>Company Name</th>
                   <th style={{ padding: "16px 20px" }}>Client Name</th>
                   <th style={{ padding: "16px 20px" }}>Email_id</th>
@@ -122,7 +128,7 @@ const Report = () => {
                     }}
                   >
                     <td style={{ padding: "16px 20px" }}>
-                      <span style={{ color: "#6b7280" }}>⋮</span>
+                      <span style={{ color: "#000000" }}>⋮</span>
                     </td>
                     <td style={{ padding: "16px 20px" }}>{row.company}</td>
                     <td style={{ padding: "16px 20px" }}>{row.client}</td>
@@ -133,7 +139,7 @@ const Report = () => {
                       <button
                         onClick={() => setShowModal(true)}
                         style={{
-                          backgroundColor: "#4f46e5",
+                          backgroundColor: "#3660DE",
                           color: "white",
                           border: "none",
                           borderRadius: "4px",
@@ -240,7 +246,7 @@ const Report = () => {
           <button
             style={{
               padding: "8px 32px",
-              backgroundColor: "#4f46e5",
+              backgroundColor: "#4972E8",
               color: "white",
               border: "none",
               borderRadius: "8px",
@@ -269,7 +275,7 @@ const Report = () => {
                 borderCollapse: "collapse",
               }}
             >
-              <thead>
+              <thead className="report-thead">
                 <tr
                   style={{
                     backgroundColor: "#f8f9fa",
@@ -306,7 +312,7 @@ const Report = () => {
                     <td
                       style={{
                         padding: "16px 20px",
-                        color: i === 0 ? "#4f46e5" : "#000",
+                        color: i === 0 ? "#000" : "#000",
                       }}
                     >
                       {row.comment}

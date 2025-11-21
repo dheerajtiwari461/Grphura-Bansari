@@ -11,6 +11,10 @@
   transition: margin-left 0.3s ease, width 0.3s ease;
 }
 
+.report-thead th{
+  color: #000000;
+}
+
 /* Mobile view */
 @media (max-width: 1024px) {
   #report-container {
