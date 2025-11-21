@@ -11,8 +11,9 @@
   transition: margin-left 0.3s ease, width 0.3s ease;
 }
 
-.report-thead th{
+.report-thead th {
   color: #000000;
+  font-weight: 700;
 }
 
 /* Mobile view */

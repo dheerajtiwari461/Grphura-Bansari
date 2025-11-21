@@ -203,7 +203,13 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
+#sales-exe-thead th{
+  color: #000000;
+  font-weight: 700;
+}
+
 td {
+  color: #101828;
   font-size: 13px;
 }
 

@@ -330,7 +330,7 @@ td button {
 .radio-group {
   display: flex;
   justify-content: center;
-  gap: 35px;
+  gap: 65px;
   margin-bottom: 25px;
 }
 

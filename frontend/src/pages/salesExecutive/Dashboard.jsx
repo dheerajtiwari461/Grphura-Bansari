@@ -59,7 +59,7 @@ const Dashboard = () => {
                   style={{ overflowX: "auto", whiteSpace: "nowrap" }}
                 >
                   <table id="se-table">
-                    <thead>
+                    <thead id="sales-exe-thead">
                       <th> </th>
                       <th>Company Name</th>
                       <th>Client Name</th>

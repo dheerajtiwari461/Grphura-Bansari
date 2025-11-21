@@ -34,7 +34,11 @@ td {
   font-size: 13px;
 }
 
-th {
+#sales-userData tr {
+  margin-left: 10px;
+}
+
+#sales-userData tr th {
   color: #000;
   font-weight: 700;
   font-size: 15px;

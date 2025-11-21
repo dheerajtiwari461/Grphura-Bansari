@@ -1,5 +1,6 @@
 import React from "react";
 import "../../style/salesExecutive/userData.css";
+import "../../App.css";
 
 function UserData() {
   return (
@@ -8,9 +9,9 @@ function UserData() {
         <h1>User Data</h1>
         <div className="table-content">
           <table className="table-data">
-            <thead>
+            <thead id="sales-userData">
               <tr>
-                <th colSpan={2}>Company Name</th>
+                <th>Company Name</th>
                 <th>Client Name</th>
                 <th>Email_id</th>
                 <th>Contact no.</th>
@@ -21,7 +22,6 @@ function UserData() {
             </thead>
             <tbody>
               <tr>
-                <td>:</td>
                 <td>Bold text columns</td>
                 <td>Bold text columns</td>
                 <td>Bold text columns</td>
@@ -35,7 +35,6 @@ function UserData() {
                 </td>
               </tr>
               <tr>
-                <td>:</td>
                 <td>Bold text columns</td>
                 <td>Bold text columns</td>
                 <td>Bold text columns</td>
@@ -49,7 +48,6 @@ function UserData() {
                 </td>
               </tr>
               <tr>
-                <td>:</td>
                 <td>Bold text columns</td>
                 <td>Bold text columns</td>
                 <td>Bold text columns</td>
@@ -63,7 +61,6 @@ function UserData() {
                 </td>
               </tr>
               <tr>
-                <td>:</td>
                 <td>Bold text columns</td>
                 <td>Bold text columns</td>
                 <td>Bold text columns</td>
@@ -77,7 +74,6 @@ function UserData() {
                 </td>
               </tr>
               <tr>
-                <td>:</td>
                 <td>Bold text columns</td>
                 <td>Bold text columns</td>
                 <td>Bold text columns</td>
@@ -91,7 +87,6 @@ function UserData() {
                 </td>
               </tr>
               <tr>
-                <td>:</td>
                 <td>Bold text columns</td>
                 <td>Bold text columns</td>
                 <td>Bold text columns</td>
