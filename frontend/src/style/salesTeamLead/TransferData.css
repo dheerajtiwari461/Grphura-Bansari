@@ -18,3 +18,44 @@
     width: 100%;
   }
 }
+
+/* Remove ALL lines */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Remove bootstrap background */
+.custom-table thead {
+  background-color: #f8f9fa; /* or white if you want */
+}
+
+/* Remove all borders */
+.custom-table th,
+.custom-table td,
+.custom-table tr {
+  border: none !important;
+}
+
+/* Table cell styling */
+.custom-table th {
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background: none;
+  color: #555;
+}
+
+.custom-table td {
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+/* Optional: row hover effect if you want */
+.custom-table tr:hover {
+  background-color: #f7f9fc;
+}

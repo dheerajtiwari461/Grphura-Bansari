@@ -7,7 +7,25 @@
   padding: 40px;
 }
 
-#stl-table thead th{
-color: #000000;
-font-weight: 700;
+#stl-table thead th {
+  color: #000000;
+  font-weight: 700;
+}
+
+#totalSales-heading-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#totalSales-heading-btn button {
+  border: none;
+  outline: none;
+  background-color: #4972e8;
+  color: #ffffff;
+  font-size: 13px;
+  width: 108px;
+  height: 33px;
+  border-radius: 4px;
+  margin-bottom: 15px;
 }

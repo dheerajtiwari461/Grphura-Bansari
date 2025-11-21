@@ -81,7 +81,7 @@ export default function Payout() {
           <h1>Client Management</h1>
           <div id="client-list">
             <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
-              <table style={{width:"100%"}}>
+              <table style={{ width: "100%" }}>
                 <thead>
                   <th> </th>
                   <th>Employee Id</th>
@@ -107,6 +107,10 @@ export default function Payout() {
                       borderRadius: "5px",
                       border: "none",
                       fontSize: "13px",
+                      width: "68px",
+                      height: "21px",
+                      marginTop: "10px",
+                      marginLeft: "45px",
                     }}
                   >
                     Pending
@@ -132,6 +136,10 @@ export default function Payout() {
                       borderRadius: "5px",
                       border: "none",
                       fontSize: "13px",
+                      width: "68px",
+                      height: "21px",
+                      marginTop: "10px",
+                      marginLeft: "45px",
                     }}
                   >
                     Pending
@@ -157,6 +165,10 @@ export default function Payout() {
                       borderRadius: "5px",
                       border: "none",
                       fontSize: "13px",
+                      width: "68px",
+                      height: "21px",
+                      marginTop: "10px",
+                      marginLeft: "45px",
                     }}
                   >
                     Paid
@@ -182,6 +194,10 @@ export default function Payout() {
                       borderRadius: "5px",
                       border: "none",
                       fontSize: "13px",
+                      width: "68px",
+                      height: "21px",
+                      marginTop: "10px",
+                      marginLeft: "45px",
                     }}
                   >
                     Paid
@@ -207,6 +223,10 @@ export default function Payout() {
                       borderRadius: "5px",
                       border: "none",
                       fontSize: "13px",
+                      width: "68px",
+                      height: "21px",
+                      marginTop: "10px",
+                      marginLeft: "45px",
                     }}
                   >
                     Pending
@@ -232,6 +252,10 @@ export default function Payout() {
                       borderRadius: "5px",
                       border: "none",
                       fontSize: "13px",
+                      width: "68px",
+                      height: "21px",
+                      marginTop: "10px",
+                      marginLeft: "45px",
                     }}
                   >
                     Pending

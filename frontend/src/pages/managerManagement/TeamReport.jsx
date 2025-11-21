@@ -63,7 +63,7 @@ function TeamReport() {
                   <td className="bold">{row.date}</td>
                   <td className="bold">{row.deadline}</td>
                   <td className="bold">{row.projectlist}</td>
-                  <td className="bold"><button className='manager-veiw' onClick={() => setShowPopup(true)}>{row.activity}</button></td>
+                  <td className="bold"><button className='teamReport-veiw' onClick={() => setShowPopup(true)}>{row.activity}</button></td>
                                     
                 </tr>
               ))}

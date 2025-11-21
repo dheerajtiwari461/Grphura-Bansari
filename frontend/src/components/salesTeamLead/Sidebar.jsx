@@ -7,8 +7,8 @@ import prospectForm from "../../assets/salesTeamLead/sidebar/prospectForm.png";
 import report from "../../assets/salesTeamLead/sidebar/report.png";
 import totalSales from "../../assets/salesTeamLead/sidebar/total-sales.png";
 import teamMember from "../../assets/salesTeamLead/sidebar/team-member.png";
-import transferData from "../../assets/salesTeamLead/sidebar/transferData.png"
-import untouchedData from "../../assets/salesTeamLead/sidebar/untouchedData.png"
+import transferData from "../../assets/salesTeamLead/sidebar/transferData.png";
+import untouchedData from "../../assets/salesTeamLead/sidebar/untouchedData.png";
 import "../salesTeamLead/sidebar.css";
 import { NavLink } from "react-router-dom";
 
@@ -24,24 +24,28 @@ const Sidebar = () => {
       {/* === Sidebar === */}
       <aside className={`sidebar ${isOpen ? "open" : ""}`}>
         <div id="sidebar-container">
-      <div id="menu-toggle" className={isOpen ? "open" : ""} onClick={toggleSidebar}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-          <div id="sidebar-header" style={{backgroundColor:"#3158c9"}}>
+          <div
+            id="menu-toggle"
+            className={isOpen ? "open" : ""}
+            onClick={toggleSidebar}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="sidebar-header" style={{ backgroundColor: "#3158c9" }}>
             <img src={logo} alt="Graphura Logo" id="logo-img" />
           </div>
 
-          <div id="profile-section" style={{backgroundColor:"#3d68e7"}}>
+          <div id="profile-section" style={{ backgroundColor: "#3d68e7" }}>
             <img src={profile} alt="Profile Icon" id="profile-img" />
             <div id="profile-details">
               <h1 id="profile-name">Name</h1>
-              <p id="profile-title">Sales Team Lead</p>
+              <p id="profile-title">TL - Sales</p>
             </div>
           </div>
 
-          <ul id="nav-menu" style={{backgroundColor:"#3d68e7"}}>
+          <ul id="nav-menu" style={{ backgroundColor: "#3d68e7" }}>
             <li className="nav-item">
               <img src={dashboard} alt="Dashboard Icon" id="nav-icon" />
               <NavLink to="/dashboard">Dashboard</NavLink>

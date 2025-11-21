@@ -15,7 +15,7 @@ const Dashboard = () => {
       <div id="dashboard">
         <div id="dashboard-container">
           <section id="dashboard-data">
-            <h1>Dashboard</h1>
+            <h1 style={{fontSize:"36px"}}>Dashboard</h1>
             <div id="data-wrap">
               <div id="data">
                 <h3>TOTAL PROJECTS</h3>
@@ -80,7 +80,7 @@ const Dashboard = () => {
             </div>
           </section>
           <section id="dashboard-data">
-            <h1>Feedback Department</h1>
+            <h1 style={{fontSize:"36px"}}>Feedback Department</h1>
             <div id="data-wrap">
               <div id="data">
                 <h3>TOTAL DATA</h3>

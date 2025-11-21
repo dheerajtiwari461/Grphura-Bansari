@@ -89,9 +89,9 @@ function TeamMember() {
                   </td>
                   <td
                     className={
-                      member.Status === "Active"
-                        ? "status-badge status-active"
-                        : "status-badge status-inactive"
+                      member.Status.toLowerCase() === "active"
+                        ? "badge badge-success"
+                        : "badge badge-danger"
                     }
                   >
                     {member.Status}

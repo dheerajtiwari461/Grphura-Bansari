@@ -105,7 +105,7 @@ const Complaints = () => {
 
         /* Sidebar + Responsive Layout */
         .complaints-wrapper {
-          background: #f7f8fa;
+          // background: #ffffff;
           min-height: 100vh;
           padding: 40px 30px;
           margin-left: 250px;
@@ -373,7 +373,7 @@ const Complaints = () => {
         }
       `}</style>
 
-      <div className="complaints-wrapper">
+      <div style={{backgroundColor:"#ffffff"}} className="complaints-wrapper">
         {/* Tabs */}
         <div className="tabs-container">
           <button className={`tab-button ${activeTab === "solved" ? "active" : ""}`} onClick={() => setActiveTab("solved")}>  

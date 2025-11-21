@@ -109,7 +109,7 @@ const Feedbacks = () => {
           display: flex;
           gap: 0;
           border-bottom: 1px solid #ddd;
-          background: #f7f8fa;
+          background: #ffffffff;
           width: 100%;
           padding:0px 50px
         }

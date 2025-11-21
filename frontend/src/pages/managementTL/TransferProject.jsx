@@ -20,7 +20,7 @@ export default function TransferProjects() {
       services: "Bold text column",
       assigned: "Bold text column",
       deadline: "Bold text column",
-      action: "View",
+      action: "Update",
     },
     {
       company: "Bold text column",

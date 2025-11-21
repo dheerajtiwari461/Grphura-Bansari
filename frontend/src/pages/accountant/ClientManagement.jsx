@@ -16,10 +16,12 @@ const ClientManagement = () => {
         <div id="dashboard-container">
           <section id="hot-clients">
             <div id="container">
-              <h1>Client Management</h1>
+              <h1 style={{ color: "#5A5C69", fontSize: "36px" }}>
+                Client Management
+              </h1>
               <div id="client-list">
                 <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
-                  <table style={{width:"100%"}}>
+                  <table style={{ width: "100%" }}>
                     <thead>
                       <th> </th>
                       <th>Company Name</th>

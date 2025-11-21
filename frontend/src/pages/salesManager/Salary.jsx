@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Salary = () => {
   const data = [
     {
@@ -18,7 +17,6 @@ const Salary = () => {
       contact: "Bold text column",
       duration: "Bold text column",
       Amount: "4000/- ",
-      
     },
     {
       Name: "Bold text column",
@@ -27,7 +25,6 @@ const Salary = () => {
       contact: "Bold text column",
       duration: "Bold text column",
       Amount: "4000/- ",
-      
     },
     {
       Name: "Bold text column",
@@ -36,7 +33,6 @@ const Salary = () => {
       contact: "Bold text column",
       duration: "Bold text column",
       Amount: "4000/- ",
-      
     },
     {
       Name: "Bold text column",
@@ -45,7 +41,6 @@ const Salary = () => {
       contact: "Bold text column",
       duration: "Bold text column",
       Amount: "4000/- ",
-      
     },
     {
       Name: "Bold text column",
@@ -54,19 +49,21 @@ const Salary = () => {
       contact: "Bold text column",
       duration: "Bold text column",
       Amount: "4000/- ",
-     
     },
   ];
 
   return (
-    <div id="sales-report-container" style={{ backgroundColor: "#fff" }}>
+    <div
+      id="sales-report-container"
+      style={{ backgroundColor: "#fff", fontSize: "36px" }}
+    >
       {/* Heading */}
       <h3 id="sales-report-heading">Salary</h3>
 
       {/* Table container */}
       <div id="sales-report-wrapper">
         <div id="sales-report-table-container">
-          <table id="sales-report-table" style={{width:"100%"}}>
+          <table id="sales-report-table" style={{ width: "100%" }}>
             <thead id="sales-report-thead">
               <tr id="sales-report-header-row">
                 <th id="th-company">Name</th>

@@ -42,7 +42,8 @@
   text-align: center;
 }
 
-.managermgmt-search-btn , .manager-veiw {
+.managermgmt-search-btn,
+.teamReport-veiw {
   width: 108px;
   height: 33px;
   border: none;
@@ -53,10 +54,15 @@
   font-weight: 500;
 }
 
+.teamReport-veiw {
+  width: 68px;
+  height: 21px;
+}
+
 .managermgmt-table-container {
   margin-top: 2rem;
   overflow-x: auto;
-  width:100%;
+  width: 100%;
 }
 
 .managermgmt-table {
@@ -110,7 +116,6 @@
     padding-top: 1rem;
   }
 }
-
 
 /* Overlay background */
 .popup-overlay {

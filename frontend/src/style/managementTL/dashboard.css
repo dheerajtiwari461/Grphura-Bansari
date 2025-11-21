@@ -37,7 +37,7 @@ body {
 /* === DASHBOARD HEADING === */
 #dashboard-data h1 {
   color: #5a5c69;
-  font-size: 24px;
+  /* font-size: 36px; */
   margin-bottom: 20px;
 }
 

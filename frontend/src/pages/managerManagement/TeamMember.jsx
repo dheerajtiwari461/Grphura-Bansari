@@ -83,21 +83,20 @@ function TeamMember() {
                   <td>{member.Joining}</td>
                   <td
                     className={
-                      member.Status === "Active"
-                        ? "status-badge status-active"
-                        : "status-badge status-inactive"
+                      member.Status.toLowerCase() === "active"
+                        ? "badge badge-success"
+                        : "badge badge-danger"
                     }
-                    style={{ marginTop: 15, cursor:"pointer" }}
+                    style={{ marginTop: 15, cursor: "pointer" }}
                   >
-                    {" "}
-                    {member.Status}{" "}
+                    {member.Status}
                   </td>
                   <td>
                     <button
                       className="viewbtn"
                       onClick={() => setViewModal(true)}
                     >
-                      View
+                      Update
                     </button>
                   </td>
                 </tr>

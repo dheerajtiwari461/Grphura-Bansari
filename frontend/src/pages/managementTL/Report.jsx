@@ -97,7 +97,7 @@ const Report = () => {
   return (
     <div
       id="untouchedData-container"
-      className="container-fluid bg-light min-vh-100"
+      className="container-fluid min-vh-100"
       style={{
         overflowX: "hidden",
         maxWidth: "100vw",

@@ -5,7 +5,10 @@ const TotalSales = () => {
   return (
     <main id="totalSales-main">
       <div id="totalSales-main-content">
-        <h1 style={{ fontWeight: "700" }}>Total Sales</h1>
+        <div id="totalSales-heading-btn">
+          <h1 style={{ fontWeight: "650", color: "#5A5C69" }}>Total Sales</h1>
+          <button>Add New</button>
+        </div>
         <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
           <table id="stl-table">
             <thead>

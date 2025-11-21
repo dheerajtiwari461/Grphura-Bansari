@@ -53,8 +53,7 @@ const SalesReport = () => {
       className="p-4"
       style={{ backgroundColor: "#fff" }}
     >
-
-      <h3 className="fw-bold mb-4 text-secondary">Transfer Data</h3>
+      <h3 style={{fontWeight:"700"}} className="mb-4 text-secondary">Transfer Data</h3>
 
       <div className="d-flex flex-column mb-5 mx-4">
         <div
@@ -101,34 +100,34 @@ const SalesReport = () => {
         </div>
       </div>
 
-      <h3 className="fw-bold mb-4 text-secondary">Transfer Data History</h3>
+      <h3 style={{fontWeight:"700"}} className="mb-4 text-secondary">Transfer Data History</h3>
 
       <div className="d-flex justify-content-center">
         <div
-          className="table-responsive shadow-lg p-4 bg-white rounded"
+          className="table-responsive shadow-lg p-2 bg-white rounded"
           style={{
             width: "100%",
             padding: "0px 20px 0px 80px",
           }}
         >
-          <table className="table table-bordered align-middle text-center text-secondary opacity-75 mb-0">
-            <thead className="table-light">
+          <table className="custom-table">
+            <thead>
               <tr>
-                <th className="fw-bold">Employee Name</th>
-                <th className="fw-bold">Transfer Data in No.</th>
-                <th className="fw-bold">Date</th>
-                <th className="fw-bold">Transfer By</th>
-                <th className="fw-bold">Total Data in account</th>
+                <th>Employee Name</th>
+                <th>Transfer Data in No.</th>
+                <th>Date</th>
+                <th>Transfer By</th>
+                <th>Total Data in account</th>
               </tr>
             </thead>
             <tbody>
               {data.map((row, index) => (
                 <tr key={index}>
-                  <td className="fw-semibold">{row.employeeName}</td>
-                  <td className="fw-semibold">{row.TransferData}</td>
-                  <td className="fw-semibold">{row.date}</td>
-                  <td className="fw-semibold">{row.Transferby}</td>
-                  <td className="fw-semibold">{row.TotalData}</td>
+                  <td>{row.employeeName}</td>
+                  <td>{row.TransferData}</td>
+                  <td>{row.date}</td>
+                  <td>{row.Transferby}</td>
+                  <td>{row.TotalData}</td>
                 </tr>
               ))}
             </tbody>

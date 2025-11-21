@@ -99,7 +99,7 @@ const UntouchedData = () => {
   return (
     <div
       id="untouchedData-container"
-      className="container-fluid bg-light min-vh-100"
+      className="container-fluid min-vh-100"
       style={{
         overflowX: "hidden",
         maxWidth: "100vw",
@@ -109,7 +109,9 @@ const UntouchedData = () => {
         {/* Header */}
         <div className="col-12">
           <div className="d-flex justify-content-between align-items-center mb-3 pt-4 px-3">
-            <h1 className="h3 text-dark fw-semibold m-0">Untouched Data</h1>
+            <h1 style={{ color: "#5A5C69" }} className="h3 fw-semibold m-0">
+              Untouched Data
+            </h1>
           </div>
         </div>
 
@@ -241,9 +243,7 @@ const UntouchedData = () => {
                     <th className="small fw-bold p-3">Email ID</th>
                     <th className="small fw-bold p-3">Contact No.</th>
                     <th className="small fw-bold p-3">Last Call</th>
-                    <th className="small fw-bold p-3">
-                      Sales Executive Name
-                    </th>
+                    <th className="small fw-bold p-3">Sales Executive Name</th>
                     <th className="small fw-bold p-3">Transfer Date</th>
                   </tr>
                 </thead>

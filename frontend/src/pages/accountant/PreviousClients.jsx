@@ -18,7 +18,9 @@ const PreviousClients = () => {
       <div id="dashboard">
         <div id="dashboard-container">
           <section id="dashboard-data">
-            <h1>Dashboard</h1>
+            <h1 style={{ fontSize: "36px" }}>
+              Previous Clients (Last 30 Days)
+            </h1>
             <div id="data-wrap">
               <div id="data">
                 <h3>TOTAL CLIENTS</h3>
@@ -52,7 +54,7 @@ const PreviousClients = () => {
           </section>
           <section id="hot-clients">
             <div id="container">
-              <h1>Past Clients</h1>
+              <h1 style={{ color: "#5A5C69" }}>Past Clients</h1>
               <div id="client-list">
                 <div style={{ overflowX: "auto", whiteSpace: "nowrap" }}>
                   <table style={{ width: "100%" }}>
