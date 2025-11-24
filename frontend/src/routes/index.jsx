@@ -28,6 +28,7 @@ import SM_TeamMember from "../pages/salesManager/TeamMember";
 import SM_TeamReport from "../pages/salesManager/Report";
 import SM_TransferData from "../pages/salesManager/Transferdata";
 import SM_TransferDataToFin from "../pages/salesManager/TransferDataToFin";
+import SM_TotalProspect from "../pages/salesManager/TotalProspect"
 
 // managementTL
 import M_Dashboard from "../pages/managementTL/Dashboard";
@@ -40,6 +41,7 @@ import M_Review from "../pages/managementTL/Review";
 
 // managementEmployee
 import ME_Dashboard from "../pages/managementEmployee/Dashboard";
+import ME_MyProjects from "../pages/managementEmployee/Myprojects";
 import ME_CompleteProjects from "../pages/managementEmployee/CompleteProjects";
 import ME_PayOut from "../pages/managementEmployee/PayOut";
 import ME_Help from "../pages/managementEmployee/Help";
@@ -62,6 +64,7 @@ import FM_Feedbacks from "../pages/feedbackManager/Feedbacks";
 import FM_Salary from "../pages/feedbackManager/FeedbackSalary";
 import FM_Complaint from "../pages/feedbackManager/Complaints";
 import FM_TeamReport from "../pages/feedbackManager/TeamReport";
+import FM_TeamMember from "../pages/feedbackManager/TeamMember";
 
 // feedbackEmployee
 import FE_Dashboard from "../pages/feedBackEmployee/Dashboard";
@@ -117,6 +120,7 @@ export const roleBasedRoutes = {
     { path: "/transfer-data-fin", element: <SM_TransferDataToFin /> },
     { path: "/report", element: <SM_TeamReport /> },
     { path: "/transfer-data", element: <SM_TransferData /> },
+    { path: "/total-prospect", element: <SM_TotalProspect /> },
   ],
 
   managementTL: [
@@ -131,6 +135,7 @@ export const roleBasedRoutes = {
 
   managementEmployee: [
     { path: "/dashboard", element: <ME_Dashboard /> },
+    { path: "/my-projects", element: <ME_MyProjects /> },
     { path: "/completed-projects", element: <ME_CompleteProjects /> },
     { path: "/payout", element: <ME_PayOut /> },
     { path: "/help", element: <ME_Help /> },
@@ -155,6 +160,7 @@ export const roleBasedRoutes = {
     { path: "/feedbacks", element: <FM_Feedbacks /> },
     { path: "/complaints", element: <FM_Complaint /> },
     { path: "/team-report", element: <FM_TeamReport /> },
+    { path: "/team-members", element: <FM_TeamMember /> },
   ],
 
   feedbackEmployee: [
